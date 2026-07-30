@@ -5,19 +5,38 @@
 
 ## Ce este 1cent-wise?
 
-1cent-wise.com este magazinul online al firmei RanadeLookSRL din Brăila, România. Este un magazin general de cartier care vinde:
+1cent-wise.com este magazinul online al firmei RanadeLookSRL din Brăila, România. Este un magazin general cu peste 3000 de produse din 21 categorii:
 
-- **Tutun & Accesorii**: țigări (Marlboro, Kent, etc.), tutun de rulat, filtre, foițe, brichete
-- **Haine Noi**: tricouri, jeanși, hanorace, șosete — mărimi diverse
-- **Haine Second-Hand**: haine SH verificate, spălate și sortate — damă, bărbați, copii
-- **Alimente & Produse de Bază**: pâine, lapte, ulei, zahăr, cafea, bere, ciocolată, detergenți, hârtie igienică
+- **Tutun & Accesorii** (~200): țigări (25+ branduri), tutun de rulat, filtre, foițe, brichete, trabucuri
+- **Haine Damă** (~440): tricouri, bluze, rochii, pantaloni, jachete — toate mărimile, 10 culori
+- **Haine Bărbați** (~450): tricouri, cămăși, pantaloni, hanorace, geci — S–3XL
+- **Haine Copii** (~165): body bebe, tricouri, pantaloni, rochițe, geci — 2–13 ani
+- **Second-Hand** (~166): haine SH verificate și spălate — damă, bărbați, copii
+- **Încălțăminte** (~120): adidași, sandale, papuci, cizme, pantofi — toate mărimile
+- **Alimente** (~165): pâine, paste, orez, conserve, condimente, ulei, zahăr, făină
+- **Lactate** (~110): lapte, iaurt, brânză, unt, smântână, ouă
+- **Mezeluri & Carne** (~70): salam, șuncă, cârnați, bacon, carne proaspătă, pește
+- **Dulciuri & Snacks** (~110): ciocolată (10 branduri), biscuiți, chips, nuci, semințe
+- **Băuturi** (~120): Pepsi, Coca-Cola, Fanta, apă, sucuri, energizante
+- **Bere, Vin & Spirtoase** (~110): 14 mărci bere, vinuri românești, whisky, vodkă, palincă
+- **Cafea & Ceai** (~65): Jacobs, Lavazza, Nescafe — măcinată, boabe, capsule; ceai diverse
+- **Înghețată** (~68): Nestlé, Magnum, Cornetto, Ben&Jerry's — cornete, batoane, casete
+- **Casnice & Curățenie** (~125): detergenți, produse curățenie, unelte, baterii, becuri LED
+- **Igienă & Cosmetice** (~136): șampon, gel de duș, pastă de dinți, scutece, cosmetice
+- **Electrocasnice** (~88): fierbătoare, toastere, mixere, uscătoare, aspiratoare, boxe bluetooth
+- **Veselă & Bucătărie** (~82): farfurii, căni, oale, tigăi, tacâmuri, recipiente
+- **Jucării & Copii** (~80): păpuși, puzzle, LEGO, jocuri societate, biciclete, trotinete
+- **Papetărie** (~74): caiete, pixuri, rechizite școlare, rucsacuri, bibliorafturi
+- **Sezoniere** (~57): plajă, grătar, petreceri, Crăciun, decorațiuni
 
 ## Informații practică
 
 - **Locație magazin**: Str. Spiru Haret, Brăila, România
 - **Adresă facturare**: Str. Lalelelor nr. 19, Brăila
 - **Program**: Luni–Vineri 08:00–18:00, Sâmbătă 09:00–15:00, Duminică închis
-- **Interval preț**: 4–85 RON
+- **Număr produse**: 3000+
+- **Categorii**: 21
+- **Interval preț**: 1–120 RON
 - **Monedă**: RON (Leu românesc)
 - **Plată**: Cash, Card, Stripe (online), Crypto (în curând)
 - **Livrare**: Gratuită în Brăila pentru comenzi peste 50 RON. Sub 50 RON: 10 RON taxa de livrare sau ridicare din magazin.
