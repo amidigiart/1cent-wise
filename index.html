@@ -10,7 +10,6 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <link rel="canonical" href="https://1cent-wise.com/" />
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://1cent-wise.com/" />
   <meta property="og:title" content="1cent-wise — Magazin General Brăila | Tutun, Haine, Alimente" />
@@ -18,17 +17,14 @@
   <meta property="og:site_name" content="1cent-wise.com" />
   <meta property="og:locale" content="ro_RO" />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="1cent-wise — Magazin General Brăila" />
   <meta name="twitter:description" content="Tutun, haine noi & SH, alimente — tot într-un singur loc. Str. Spiru Haret, Brăila." />
 
-  <!-- AI Crawlers -->
   <meta name="ai-content-declaration" content="This is a real business website for RanadeLookSRL, a general store in Brăila, Romania." />
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏪</text></svg>" />
 
-  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,10 +53,7 @@
     "priceRange": "4–85 RON",
     "currenciesAccepted": "RON",
     "paymentAccepted": "Cash, Card, Stripe",
-    "areaServed": {
-      "@type": "City",
-      "name": "Brăila"
-    },
+    "areaServed": { "@type": "City", "name": "Brăila" },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Produse 1cent-wise",
@@ -74,10 +67,7 @@
     "sameAs": [],
     "image": "https://1cent-wise.com/og-image.png",
     "legalName": "RanadeLookSRL",
-    "founder": {
-      "@type": "Person",
-      "name": "Familia Roșca"
-    }
+    "founder": { "@type": "Person", "name": "Familia Roșca" }
   }
   </script>
 
@@ -89,11 +79,7 @@
     "url": "https://1cent-wise.com",
     "description": "Magazin general online — Brăila. Tutun, haine noi și SH, alimente.",
     "inLanguage": "ro",
-    "publisher": {
-      "@type": "Organization",
-      "name": "RanadeLookSRL",
-      "url": "https://1cent-wise.com"
-    },
+    "publisher": { "@type": "Organization", "name": "RanadeLookSRL", "url": "https://1cent-wise.com" },
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://1cent-wise.com/#catalog?q={search_term_string}",
@@ -118,89 +104,95 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #0B0F14;
-      --surface: #131920;
-      --surface-2: #1A2230;
-      --glass: rgba(19, 25, 32, 0.75);
-      --glass-border: rgba(212, 168, 83, 0.12);
+      --bg: #06090D;
+      --surface: #0D1117;
+      --surface-2: #151D28;
+      --surface-3: #1C2636;
+      --glass: rgba(13, 17, 23, 0.72);
+      --glass-border: rgba(212, 168, 83, 0.1);
       --accent: #D4A853;
-      --accent-soft: rgba(212, 168, 83, 0.15);
-      --accent-hover: #E4BC6A;
-      --green: #2D9B6E;
-      --green-soft: rgba(45, 155, 110, 0.15);
-      --red: #E85D5D;
+      --accent-2: #E8C675;
+      --accent-soft: rgba(212, 168, 83, 0.1);
+      --accent-glow: rgba(212, 168, 83, 0.06);
+      --green: #34D399;
+      --green-dim: #2D9B6E;
+      --green-soft: rgba(52, 211, 153, 0.1);
+      --red: #F87171;
+      --stripe: #635BFF;
       --text: #F0EDE6;
-      --text-secondary: #B8BCC8;
-      --muted: #6B7280;
-      --radius: 14px;
-      --radius-lg: 20px;
-      --radius-xl: 28px;
-      --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-      --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      --text-2: #B0B8C8;
+      --text-3: #6B7994;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+      --shadow: 0 8px 32px rgba(0,0,0,0.5);
+      --shadow-lg: 0 24px 64px rgba(0,0,0,0.6);
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --transition: 0.25s var(--ease);
     }
 
-    @font-face {
-      font-family: 'SystemDisplay';
-      src: local('Segoe UI'), local('SF Pro Display'), local('Helvetica Neue'), local('Arial');
-    }
-
-    html {
-      scroll-behavior: smooth;
-      -webkit-text-size-adjust: 100%;
-    }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
     body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
-      font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+      line-height: 1.65;
+      font-size: clamp(0.94rem, 1.4vw, 1.05rem);
       overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
     }
 
-    body::before {
-      content: '';
-      position: fixed;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background:
-        radial-gradient(ellipse at 20% 0%, rgba(212, 168, 83, 0.06) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 100%, rgba(45, 155, 110, 0.04) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 50%, rgba(212, 168, 83, 0.02) 0%, transparent 70%);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { color: var(--accent-hover); }
+    a { color: var(--accent); text-decoration: none; transition: color var(--transition); }
+    a:hover { color: var(--accent-2); }
     img { max-width: 100%; display: block; }
 
     .container {
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 0 auto;
-      padding: 0 clamp(1rem, 3vw, 2rem);
+      padding: 0 clamp(1rem, 3vw, 2.5rem);
       position: relative;
+      z-index: 2;
+    }
+
+    /* ─── Ambient Background ─── */
+    #ambientCanvas {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    .grain-overlay {
+      position: fixed;
+      inset: 0;
       z-index: 1;
+      pointer-events: none;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      background-size: 128px;
     }
 
     /* ─── Top Bar ─── */
     .topbar {
-      background: linear-gradient(90deg, var(--accent) 0%, #C69840 50%, var(--accent) 100%);
-      background-size: 200% 100%;
-      animation: shimmer 8s ease infinite;
-      color: #0B0F14;
+      background: linear-gradient(90deg, var(--accent) 0%, #C69840 30%, var(--accent-2) 50%, #C69840 70%, var(--accent) 100%);
+      background-size: 300% 100%;
+      animation: topbarFlow 12s ease infinite;
+      color: var(--bg);
       text-align: center;
-      padding: 0.55rem 1rem;
-      font-size: 0.82rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.78rem;
       font-weight: 700;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
       position: relative;
       z-index: 200;
     }
 
-    @keyframes shimmer {
+    @keyframes topbarFlow {
       0%, 100% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
     }
@@ -210,144 +202,470 @@
       position: sticky;
       top: 0;
       z-index: 150;
-      background: rgba(11, 15, 20, 0.85);
-      backdrop-filter: blur(20px) saturate(1.4);
-      -webkit-backdrop-filter: blur(20px) saturate(1.4);
-      border-bottom: 1px solid var(--glass-border);
+      background: rgba(6, 9, 13, 0.8);
+      backdrop-filter: blur(24px) saturate(1.6);
+      -webkit-backdrop-filter: blur(24px) saturate(1.6);
+      border-bottom: 1px solid rgba(212, 168, 83, 0.06);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .site-header.scrolled {
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
     }
 
     .header-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1rem;
-      padding-top: 0.7rem;
-      padding-bottom: 0.7rem;
+      gap: 1.5rem;
+      padding: 0.65rem 0;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.85rem;
       text-decoration: none;
       color: var(--text);
     }
 
     .brand-badge {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--accent), #C69840);
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--accent), #C69840, var(--accent-2));
+      background-size: 200% 200%;
+      animation: badgeShift 6s ease infinite;
       display: grid;
       place-items: center;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 900;
-      color: #0B0F14;
+      color: var(--bg);
       flex-shrink: 0;
-      box-shadow: 0 4px 16px rgba(212, 168, 83, 0.3);
+      box-shadow: 0 4px 20px rgba(212, 168, 83, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+    }
+
+    @keyframes badgeShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
     }
 
     .brand-copy strong {
       display: block;
-      font-size: 1.1rem;
-      letter-spacing: 0.04em;
+      font-size: 1.15rem;
+      letter-spacing: 0.08em;
+      font-weight: 800;
     }
 
     .brand-copy span {
-      color: var(--muted);
-      font-size: 0.78rem;
+      color: var(--text-3);
+      font-size: 0.76rem;
+      letter-spacing: 0.02em;
     }
 
     .header-nav {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
-      flex-wrap: wrap;
+      gap: 0.25rem;
     }
 
     .nav-link {
-      padding: 0.5rem 0.85rem;
-      border-radius: 10px;
-      color: var(--text-secondary);
-      font-size: 0.88rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 12px;
+      color: var(--text-2);
+      font-size: 0.86rem;
       font-weight: 500;
       transition: all var(--transition);
+      position: relative;
     }
 
-    .nav-link:hover {
-      background: var(--accent-soft);
-      color: var(--accent);
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 1px;
+      transition: all 0.3s var(--ease);
+      transform: translateX(-50%);
     }
+
+    .nav-link:hover { color: var(--accent); }
+    .nav-link:hover::after { width: 60%; }
+
+    .nav-link.active {
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .nav-link.active::after { width: 60%; }
 
     /* ─── Buttons ─── */
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 0.45rem;
-      padding: 0.7rem 1.3rem;
-      border-radius: 12px;
+      gap: 0.5rem;
+      padding: 0.72rem 1.4rem;
+      border-radius: 14px;
       border: none;
       font-weight: 700;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       cursor: pointer;
-      transition: all var(--transition);
+      transition: all 0.3s var(--ease);
       text-decoration: none;
       white-space: nowrap;
+      font-family: inherit;
+      position: relative;
+      overflow: hidden;
     }
 
     .btn-primary {
       background: linear-gradient(135deg, var(--accent), #C69840);
-      color: #0B0F14;
-      box-shadow: 0 4px 20px rgba(212, 168, 83, 0.25);
+      color: var(--bg);
+      box-shadow: 0 4px 24px rgba(212, 168, 83, 0.25);
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
 
     .btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 8px 28px rgba(212, 168, 83, 0.35);
-      color: #0B0F14;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 36px rgba(212, 168, 83, 0.4);
+      color: var(--bg);
     }
 
+    .btn-primary:hover::before { opacity: 1; }
+
     .btn-secondary {
-      background: var(--accent-soft);
+      background: rgba(212, 168, 83, 0.08);
       color: var(--accent);
-      border: 1px solid rgba(212, 168, 83, 0.2);
+      border: 1px solid rgba(212, 168, 83, 0.15);
     }
 
     .btn-secondary:hover {
-      background: rgba(212, 168, 83, 0.22);
-    }
-
-    .ghost {
-      background: var(--green-soft);
-      color: var(--green);
-      border: 1px solid rgba(45, 155, 110, 0.2);
-      padding: 0.55rem 1rem;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 0.85rem;
-      cursor: pointer;
-      transition: all var(--transition);
-    }
-
-    .ghost:hover {
-      background: rgba(45, 155, 110, 0.25);
+      background: rgba(212, 168, 83, 0.15);
+      border-color: rgba(212, 168, 83, 0.3);
       transform: translateY(-1px);
     }
 
+    .ghost {
+      background: rgba(52, 211, 153, 0.08);
+      color: var(--green);
+      border: 1px solid rgba(52, 211, 153, 0.15);
+      padding: 0.55rem 1.1rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.84rem;
+      cursor: pointer;
+      transition: all 0.3s var(--ease);
+      font-family: inherit;
+    }
+
+    .ghost:hover {
+      background: rgba(52, 211, 153, 0.18);
+      border-color: rgba(52, 211, 153, 0.35);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(52, 211, 153, 0.15);
+    }
+
+    /* ─── Reveal Animation ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
     /* ─── Hero ─── */
     .hero {
-      padding: clamp(2rem, 5vw, 4rem) 0;
+      padding: clamp(3rem, 8vw, 6rem) 0 clamp(2rem, 5vw, 4rem);
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(212, 168, 83, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 1.5rem;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 2rem;
       align-items: start;
     }
 
-    .hero-card, .stats-card, .section-card {
+    .hero-card {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(212, 168, 83, 0.08);
+      border: 1px solid rgba(212, 168, 83, 0.12);
+      color: var(--accent);
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.03em;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse-dot 2s ease infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+    }
+
+    .hero-card h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      line-height: 1.12;
+      margin-bottom: 1.2rem;
+      text-wrap: balance;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-card h1 .text-gradient {
+      background: linear-gradient(135deg, var(--text) 0%, var(--accent) 40%, var(--accent-2) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-card > p {
+      color: var(--text-2);
+      max-width: 56ch;
+      margin-bottom: 1.5rem;
+      font-size: clamp(0.95rem, 1.3vw, 1.08rem);
+      line-height: 1.7;
+    }
+
+    .hero-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      list-style: none;
+    }
+
+    .hero-features li {
+      padding: 0.75rem 1rem;
+      background: rgba(212, 168, 83, 0.04);
+      border: 1px solid rgba(212, 168, 83, 0.06);
+      border-radius: 14px;
+      font-size: 0.86rem;
+      color: var(--text-2);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      transition: all var(--transition);
+    }
+
+    .hero-features li:hover {
+      background: rgba(212, 168, 83, 0.08);
+      border-color: rgba(212, 168, 83, 0.12);
+      transform: translateX(4px);
+    }
+
+    .hero-features li .feat-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--accent-soft);
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      color: var(--text-3);
+      border-top: 1px solid rgba(107, 114, 128, 0.1);
+      padding-top: 1rem;
+    }
+
+    /* ─── Stats Card ─── */
+    .stats-card {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-xl);
+      padding: clamp(1.5rem, 3vw, 2rem);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stats-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(212, 168, 83, 0.06), transparent 70%);
+      pointer-events: none;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .mini-stat {
+      padding: 1rem;
+      border-radius: 16px;
+      background: rgba(212, 168, 83, 0.04);
+      border: 1px solid rgba(212, 168, 83, 0.06);
+      text-align: center;
+      transition: all var(--transition);
+    }
+
+    .mini-stat:hover {
+      background: rgba(212, 168, 83, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .mini-stat strong {
+      display: block;
+      font-size: 1.4rem;
+      color: var(--accent);
+      font-variant-numeric: tabular-nums;
+      font-weight: 800;
+    }
+
+    .mini-stat span {
+      font-size: 0.75rem;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .trust-box {
+      padding: 1.2rem;
+      border-radius: 16px;
+      background: rgba(52, 211, 153, 0.04);
+      border: 1px solid rgba(52, 211, 153, 0.08);
+      position: relative;
+    }
+
+    .trust-box::before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 3px;
+      height: calc(100% - 24px);
+      background: linear-gradient(to bottom, var(--green), transparent);
+      border-radius: 2px;
+    }
+
+    .trust-box h3 {
+      color: var(--green);
+      font-size: 0.92rem;
+      margin-bottom: 0.5rem;
+      padding-left: 0.8rem;
+    }
+
+    .trust-box p {
+      color: var(--text-2);
+      font-size: 0.84rem;
+      padding-left: 0.8rem;
+    }
+
+    /* ─── Sections ─── */
+    .section {
+      padding: clamp(2.5rem, 6vw, 5rem) 0;
+      position: relative;
+    }
+
+    .section-divider {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212, 168, 83, 0.12), transparent);
+      margin-bottom: clamp(2.5rem, 6vw, 5rem);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      text-wrap: balance;
+    }
+
+    .section-head p {
+      color: var(--text-2);
+      max-width: 48ch;
+      font-size: 0.92rem;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.6rem;
+    }
+
+    .section-card {
       background: var(--glass);
       border: 1px solid var(--glass-border);
       border-radius: var(--radius-xl);
@@ -356,167 +674,229 @@
       -webkit-backdrop-filter: blur(16px);
     }
 
-    .eyebrow {
-      display: inline-block;
-      background: var(--accent-soft);
-      color: var(--accent);
-      padding: 0.35rem 0.85rem;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      letter-spacing: 0.02em;
-    }
-
-    .hero-card h1 {
-      font-size: clamp(1.5rem, 3.5vw, 2.4rem);
-      line-height: 1.2;
-      margin-bottom: 0.8rem;
-      text-wrap: balance;
-      background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero-card > p {
-      color: var(--text-secondary);
-      max-width: 58ch;
-      margin-bottom: 1.2rem;
-    }
-
-    .hero-points {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 0.6rem;
-      margin-bottom: 1.5rem;
-      list-style: none;
-    }
-
-    .hero-points li {
-      padding: 0.55rem 0.7rem;
-      background: rgba(212, 168, 83, 0.06);
-      border: 1px solid rgba(212, 168, 83, 0.08);
-      border-radius: 10px;
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 0.7rem;
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
-    }
-
-    .hero-note {
-      font-size: 0.82rem;
-      color: var(--muted);
-      border-top: 1px solid rgba(107, 114, 128, 0.15);
-      padding-top: 0.8rem;
-    }
-
-    .mini-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.6rem;
-      margin-bottom: 1rem;
-    }
-
-    .mini-stat {
-      padding: 0.85rem;
-      border-radius: 14px;
-      background: rgba(212, 168, 83, 0.06);
-      border: 1px solid rgba(212, 168, 83, 0.08);
-      text-align: center;
-    }
-
-    .mini-stat strong {
-      display: block;
-      font-size: 1.25rem;
-      color: var(--accent);
-      font-variant-numeric: tabular-nums;
-    }
-
-    .mini-stat span {
-      font-size: 0.78rem;
-      color: var(--muted);
-    }
-
-    .trust-box {
-      padding: 1rem;
-      border-radius: 14px;
-      background: var(--green-soft);
-      border: 1px solid rgba(45, 155, 110, 0.12);
-    }
-
-    .trust-box h3 {
-      color: var(--green);
-      font-size: 0.95rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .trust-box p {
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    /* ─── Sections ─── */
-    .section {
-      padding: clamp(1.5rem, 4vw, 3rem) 0;
-    }
-
-    .section-head {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .section-head h2 {
-      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-      text-wrap: balance;
-    }
-
-    .section-head p {
-      color: var(--text-secondary);
-      max-width: 50ch;
-      font-size: 0.9rem;
-    }
-
     /* ─── Value Props ─── */
     .value-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(5, 1fr);
       gap: 1rem;
     }
 
     .value-card {
-      padding: 1.3rem;
+      padding: 1.5rem 1.2rem;
       border-radius: var(--radius-lg);
-      background: var(--glass);
-      border: 1px solid var(--glass-border);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      transition: border-color var(--transition);
+      background: var(--surface);
+      border: 1px solid rgba(212, 168, 83, 0.06);
+      transition: all 0.4s var(--ease);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .value-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--green));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s var(--ease);
     }
 
     .value-card:hover {
-      border-color: rgba(212, 168, 83, 0.25);
+      border-color: rgba(212, 168, 83, 0.15);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+    }
+
+    .value-card:hover::before { transform: scaleX(1); }
+
+    .value-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--accent-soft);
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
     }
 
     .value-card h3 {
-      font-size: 1rem;
-      margin-bottom: 0.4rem;
-      color: var(--accent);
+      font-size: 0.96rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
     }
 
     .value-card p {
-      color: var(--text-secondary);
-      font-size: 0.88rem;
+      color: var(--text-2);
+      font-size: 0.84rem;
+      line-height: 1.6;
     }
+
+    /* ─── Gallery ─── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto;
+      gap: 0.75rem;
+    }
+
+    .gallery-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: pointer;
+      position: relative;
+      border: 1px solid rgba(212, 168, 83, 0.06);
+      transition: all 0.5s var(--ease);
+    }
+
+    .gallery-item:nth-child(1) {
+      grid-column: span 2;
+      grid-row: span 2;
+      aspect-ratio: 1;
+    }
+
+    .gallery-item:hover {
+      border-color: rgba(212, 168, 83, 0.2);
+      transform: scale(1.02);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+      z-index: 2;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease);
+    }
+
+    .gallery-item:hover img { transform: scale(1.08); }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2rem 0.9rem 0.7rem;
+      background: linear-gradient(transparent, rgba(6, 9, 13, 0.9));
+      font-size: 0.78rem;
+      color: var(--text);
+      font-weight: 600;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: all 0.3s var(--ease);
+    }
+
+    .gallery-item:hover .gallery-caption {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 300;
+      background: rgba(0, 0, 0, 0.95);
+      backdrop-filter: blur(20px);
+      display: grid;
+      place-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s var(--ease);
+      cursor: pointer;
+    }
+
+    .gallery-lightbox.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .gallery-lightbox img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6);
+    }
+
+    .gallery-lightbox .lb-close {
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      background: rgba(255,255,255,0.1);
+      border: none;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      z-index: 301;
+      transition: background 0.2s ease;
+    }
+
+    .gallery-lightbox .lb-close:hover { background: rgba(255,255,255,0.2); }
+
+    /* ─── Bundles ─── */
+    .bundle-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .bundle-card {
+      padding: 1.5rem;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, rgba(212, 168, 83, 0.05), rgba(52, 211, 153, 0.03));
+      border: 1px solid rgba(212, 168, 83, 0.08);
+      transition: all 0.4s var(--ease);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bundle-card::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(212, 168, 83, 0.04), transparent 70%);
+      pointer-events: none;
+    }
+
+    .bundle-card:hover {
+      border-color: rgba(212, 168, 83, 0.2);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+    }
+
+    .bundle-card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .bundle-card > p { color: var(--text-2); font-size: 0.86rem; }
+
+    .bundle-contents {
+      font-size: 0.82rem;
+      color: var(--text-2);
+      background: rgba(212, 168, 83, 0.04);
+      border: 1px solid rgba(212, 168, 83, 0.06);
+      border-radius: 12px;
+      padding: 0.7rem 0.9rem;
+      margin-top: 0.9rem;
+    }
+
+    .bundle-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.7rem;
+    }
+
+    .bundle-line span { color: var(--text-2); font-size: 0.88rem; }
 
     /* ─── Catalog ─── */
     .catalog-layout {
@@ -528,48 +908,62 @@
 
     .sidebar-stack {
       position: sticky;
-      top: 80px;
+      top: 90px;
       display: grid;
       gap: 1rem;
     }
 
     .search-box {
       width: 100%;
-      padding: 0.75rem 1rem;
-      border-radius: 12px;
-      border: 1px solid rgba(212, 168, 83, 0.15);
+      padding: 0.8rem 1rem 0.8rem 2.8rem;
+      border-radius: 14px;
+      border: 1px solid rgba(212, 168, 83, 0.1);
       background: var(--surface-2);
       color: var(--text);
       font-size: 0.88rem;
       outline: none;
-      transition: border-color var(--transition);
+      transition: all var(--transition);
+      font-family: inherit;
+    }
+
+    .search-wrap {
+      position: relative;
+    }
+
+    .search-wrap::before {
+      content: '⌕';
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-3);
+      font-size: 1rem;
+      pointer-events: none;
     }
 
     .search-box:focus {
       border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--accent-soft);
+      box-shadow: 0 0 0 3px var(--accent-soft), 0 4px 16px rgba(212, 168, 83, 0.1);
     }
 
-    .search-box::placeholder {
-      color: var(--muted);
-    }
+    .search-box::placeholder { color: var(--text-3); }
 
     .filter-list {
       display: grid;
-      gap: 0.3rem;
-      margin-top: 0.6rem;
+      gap: 0.25rem;
+      margin-top: 0.7rem;
     }
 
     .filter-btn {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.6rem 0.85rem;
-      border-radius: 10px;
+      padding: 0.65rem 0.9rem;
+      border-radius: 12px;
       border: 1px solid transparent;
       background: transparent;
-      color: var(--text-secondary);
-      font-size: 0.86rem;
+      color: var(--text-2);
+      font-size: 0.85rem;
       cursor: pointer;
       transition: all var(--transition);
       text-align: left;
@@ -577,45 +971,42 @@
     }
 
     .filter-btn:hover {
-      background: var(--accent-soft);
+      background: rgba(212, 168, 83, 0.06);
       color: var(--text);
     }
 
     .filter-btn.active {
       background: var(--accent-soft);
-      border-color: rgba(212, 168, 83, 0.2);
+      border-color: rgba(212, 168, 83, 0.15);
       color: var(--accent);
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .filter-btn small {
-      opacity: 0.6;
+      opacity: 0.5;
       font-variant-numeric: tabular-nums;
+      font-size: 0.78rem;
     }
 
     .sidebar-callout {
-      padding: 1rem;
-      border-radius: 14px;
-      background: rgba(45, 155, 110, 0.08);
-      border: 1px solid rgba(45, 155, 110, 0.12);
+      padding: 1.2rem;
+      border-radius: 16px;
+      background: rgba(52, 211, 153, 0.04);
+      border: 1px solid rgba(52, 211, 153, 0.08);
     }
 
     .sidebar-callout h3 {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--green);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
 
-    .sidebar-callout ul {
-      list-style: none;
-      display: grid;
-      gap: 0.35rem;
-    }
+    .sidebar-callout ul { list-style: none; display: grid; gap: 0.4rem; }
 
     .sidebar-callout li {
       font-size: 0.82rem;
-      color: var(--text-secondary);
-      padding-left: 1rem;
+      color: var(--text-2);
+      padding-left: 1.2rem;
       position: relative;
     }
 
@@ -632,25 +1023,22 @@
       align-items: center;
       gap: 1rem;
       flex-wrap: wrap;
-      margin-bottom: 1rem;
-      padding-bottom: 0.8rem;
-      border-bottom: 1px solid rgba(212, 168, 83, 0.08);
+      margin-bottom: 1.2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(212, 168, 83, 0.06);
     }
 
-    .chip-row {
-      display: flex;
-      gap: 0.4rem;
-      flex-wrap: wrap;
-    }
+    .chip-row { display: flex; gap: 0.4rem; flex-wrap: wrap; }
 
     .chip {
-      padding: 0.3rem 0.7rem;
+      padding: 0.3rem 0.75rem;
       border-radius: 999px;
       background: var(--surface-2);
-      color: var(--muted);
-      font-size: 0.76rem;
+      color: var(--text-3);
+      font-size: 0.72rem;
       font-weight: 600;
-      border: 1px solid rgba(107, 114, 128, 0.12);
+      border: 1px solid rgba(107, 114, 128, 0.08);
+      letter-spacing: 0.02em;
     }
 
     /* ─── Products ─── */
@@ -661,213 +1049,241 @@
     }
 
     .product-card {
-      border: 1px solid var(--glass-border);
+      border: 1px solid rgba(212, 168, 83, 0.06);
       border-radius: var(--radius-lg);
       overflow: hidden;
       background: var(--surface);
-      transition: all var(--transition);
+      transition: all 0.4s var(--ease);
+      will-change: transform;
     }
 
     .product-card:hover {
-      border-color: rgba(212, 168, 83, 0.25);
-      transform: translateY(-2px);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+      border-color: rgba(212, 168, 83, 0.15);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
     }
 
     .product-visual {
-      padding: 1.2rem;
+      padding: 1.3rem;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      background: linear-gradient(135deg, rgba(212, 168, 83, 0.06), rgba(45, 155, 110, 0.04));
+      background: linear-gradient(135deg, rgba(212, 168, 83, 0.04), rgba(52, 211, 153, 0.02));
       min-height: 90px;
+      position: relative;
     }
 
     .product-visual > span:first-child {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       line-height: 1;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
     }
 
     .badge {
-      background: rgba(45, 155, 110, 0.15);
+      background: rgba(52, 211, 153, 0.1);
       color: var(--green);
-      padding: 0.25rem 0.6rem;
+      padding: 0.25rem 0.65rem;
       border-radius: 8px;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-weight: 700;
       white-space: nowrap;
+      letter-spacing: 0.02em;
     }
 
     .badge-new {
-      background: rgba(212, 168, 83, 0.15);
+      background: rgba(212, 168, 83, 0.1);
       color: var(--accent);
     }
 
     .badge-promo {
-      background: rgba(232, 93, 93, 0.15);
+      background: rgba(248, 113, 113, 0.1);
       color: var(--red);
     }
 
     .product-body {
-      padding: 1rem 1.2rem 1.2rem;
+      padding: 1rem 1.3rem 1.3rem;
       display: grid;
       gap: 0.5rem;
     }
 
-    .product-body h3 {
-      font-size: 0.96rem;
-    }
-
-    .product-body p {
-      color: var(--text-secondary);
-      font-size: 0.84rem;
-    }
+    .product-body h3 { font-size: 0.96rem; font-weight: 700; }
+    .product-body p { color: var(--text-2); font-size: 0.84rem; }
 
     .usage-box {
-      font-size: 0.82rem;
-      color: var(--text-secondary);
-      background: rgba(212, 168, 83, 0.05);
-      border: 1px solid rgba(212, 168, 83, 0.08);
+      font-size: 0.8rem;
+      color: var(--text-2);
+      background: rgba(212, 168, 83, 0.03);
+      border: 1px solid rgba(212, 168, 83, 0.06);
       border-radius: 10px;
-      padding: 0.6rem 0.75rem;
+      padding: 0.6rem 0.8rem;
     }
 
     .product-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 0.3rem;
+      margin-top: 0.4rem;
     }
 
     .price {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 800;
       color: var(--accent);
       font-variant-numeric: tabular-nums;
     }
 
     .price small {
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-weight: 600;
       margin-left: 0.15rem;
-      opacity: 0.7;
+      opacity: 0.6;
     }
 
     .empty-state {
       grid-column: 1 / -1;
       text-align: center;
-      padding: 2rem;
-      color: var(--muted);
+      padding: 3rem;
+      color: var(--text-3);
     }
 
-    /* ─── Bundles ─── */
-    .bundle-grid {
+    /* ─── Schedule ─── */
+    .schedule-bar {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 0.6rem;
+      margin-top: 1rem;
     }
 
-    .bundle-card {
-      padding: 1.3rem;
-      border-radius: var(--radius-lg);
-      background: linear-gradient(135deg, rgba(212, 168, 83, 0.08), rgba(45, 155, 110, 0.06));
-      border: 1px solid rgba(212, 168, 83, 0.12);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+    .schedule-day {
+      padding: 0.8rem 0.5rem;
+      border-radius: 14px;
+      background: var(--surface-2);
+      border: 1px solid rgba(212, 168, 83, 0.04);
+      text-align: center;
+      font-size: 0.78rem;
+      transition: all var(--transition);
     }
 
-    .bundle-card h3 {
-      font-size: 1rem;
-      margin-bottom: 0.4rem;
+    .schedule-day:hover {
+      transform: translateY(-2px);
+      background: var(--surface-3);
     }
 
-    .bundle-card p {
-      color: var(--text-secondary);
-      font-size: 0.86rem;
+    .schedule-day strong {
+      display: block;
+      color: var(--accent);
+      font-size: 0.82rem;
+      margin-bottom: 0.3rem;
     }
 
-    .bundle-line {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 0.6rem;
+    .schedule-day span { color: var(--text-2); }
+
+    .schedule-day.today {
+      border-color: var(--accent);
+      background: rgba(212, 168, 83, 0.06);
+      box-shadow: 0 0 24px rgba(212, 168, 83, 0.1);
     }
 
-    .bundle-line span { color: var(--text-secondary); font-size: 0.88rem; }
+    .schedule-day.closed { opacity: 0.45; }
+    .schedule-day.closed strong { color: var(--red); }
 
     /* ─── FAQ ─── */
     .faq-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 1rem;
     }
 
     .faq-item {
-      padding: 1.2rem;
+      padding: 1.3rem;
       border-radius: var(--radius);
       background: var(--surface);
-      border: 1px solid var(--glass-border);
-      transition: border-color var(--transition);
+      border: 1px solid rgba(212, 168, 83, 0.06);
+      transition: all 0.4s var(--ease);
+      cursor: default;
     }
 
     .faq-item:hover {
-      border-color: rgba(212, 168, 83, 0.2);
+      border-color: rgba(212, 168, 83, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
     }
 
     .faq-item h3 {
       font-size: 0.95rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.5rem;
       color: var(--accent);
     }
 
     .faq-item p {
-      color: var(--text-secondary);
-      font-size: 0.85rem;
+      color: var(--text-2);
+      font-size: 0.84rem;
     }
 
     /* ─── CTA Band ─── */
     .cta-band {
-      margin-top: 1.5rem;
-      background: linear-gradient(135deg, rgba(212, 168, 83, 0.12), rgba(45, 155, 110, 0.08));
-      border: 1px solid rgba(212, 168, 83, 0.15);
+      margin-top: 2rem;
+      background: linear-gradient(135deg, rgba(212, 168, 83, 0.08), rgba(52, 211, 153, 0.04));
+      border: 1px solid rgba(212, 168, 83, 0.1);
       border-radius: var(--radius-xl);
-      padding: 1.5rem;
+      padding: 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1rem;
+      gap: 1.5rem;
       flex-wrap: wrap;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-band::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(212, 168, 83, 0.05), transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-band h2 {
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      margin-bottom: 0.4rem;
     }
 
     .cta-band p {
-      color: var(--text-secondary);
+      color: var(--text-2);
       max-width: 55ch;
       font-size: 0.9rem;
     }
 
     /* ─── Footer ─── */
     .footer {
-      padding: 2rem 0 2.8rem;
-      border-top: 1px solid rgba(212, 168, 83, 0.08);
+      padding: 3rem 0;
+      border-top: 1px solid rgba(212, 168, 83, 0.06);
+      position: relative;
+      z-index: 2;
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 1.5rem;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
     }
 
     .footer-card h3 {
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
+      font-size: 0.92rem;
+      margin-bottom: 0.7rem;
       color: var(--accent);
+      font-weight: 700;
     }
 
     .footer-card p {
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      line-height: 1.7;
+      color: var(--text-2);
+      font-size: 0.84rem;
+      line-height: 1.8;
     }
 
     .footer-bottom {
@@ -876,91 +1292,125 @@
       gap: 1rem;
       align-items: center;
       flex-wrap: wrap;
-      color: var(--muted);
-      font-size: 0.82rem;
+      color: var(--text-3);
+      font-size: 0.78rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(107, 114, 128, 0.08);
     }
 
-    /* ─── Floating Cart Button ─── */
+    /* ─── Floating Buttons ─── */
     .floating-cart {
       position: fixed;
-      right: 20px;
-      bottom: 20px;
+      right: 24px;
+      bottom: 24px;
       z-index: 120;
       border-radius: 999px;
       border: none;
       background: linear-gradient(135deg, var(--accent), #C69840);
-      color: #0B0F14;
-      padding: 0.95rem 1.2rem;
+      color: var(--bg);
+      padding: 1rem 1.4rem;
       font-weight: 800;
       font-size: 0.9rem;
-      box-shadow: 0 12px 32px rgba(212, 168, 83, 0.35);
+      box-shadow: 0 12px 40px rgba(212, 168, 83, 0.35);
       cursor: pointer;
       display: inline-flex;
       gap: 0.55rem;
       align-items: center;
-      transition: all var(--transition);
+      transition: all 0.3s var(--ease-spring);
       font-family: inherit;
     }
 
     .floating-cart:hover {
-      transform: translateY(-2px) scale(1.03);
-      box-shadow: 0 16px 40px rgba(212, 168, 83, 0.45);
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 16px 48px rgba(212, 168, 83, 0.45);
     }
+
+    .floating-cart .cart-badge {
+      background: var(--bg);
+      color: var(--accent);
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .wa-float {
+      position: fixed;
+      left: 24px;
+      bottom: 24px;
+      z-index: 120;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 8px 28px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s var(--ease-spring);
+    }
+
+    .wa-float:hover {
+      transform: scale(1.1) translateY(-2px);
+      box-shadow: 0 12px 36px rgba(37, 211, 102, 0.45);
+    }
+
+    .wa-float svg { width: 26px; height: 26px; fill: white; }
 
     /* ─── Cart Drawer ─── */
     .cart-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(11, 15, 20, 0.75);
-      backdrop-filter: blur(4px);
+      background: rgba(6, 9, 13, 0.7);
+      backdrop-filter: blur(8px);
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.2s ease;
+      transition: opacity 0.3s ease;
       z-index: 180;
     }
 
-    .cart-overlay.open {
-      opacity: 1;
-      pointer-events: auto;
-    }
+    .cart-overlay.open { opacity: 1; pointer-events: auto; }
 
     .cart-drawer {
       position: fixed;
       top: 0;
       right: 0;
-      width: min(440px, 100%);
+      width: min(460px, 100%);
       height: 100dvh;
       z-index: 190;
       transform: translateX(100%);
-      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.4s var(--ease);
       display: grid;
       grid-template-rows: auto 1fr auto;
-      background: rgba(11, 15, 20, 0.97);
+      background: rgba(6, 9, 13, 0.97);
       border-left: 1px solid var(--glass-border);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
     }
 
     .cart-drawer.open { transform: translateX(0); }
 
-    .cart-header,
-    .cart-body,
-    .cart-footer { padding: 1.1rem 1.2rem; }
+    .cart-header, .cart-body, .cart-footer { padding: 1.2rem 1.4rem; }
 
     .cart-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 1rem;
-      border-bottom: 1px solid rgba(212, 168, 83, 0.1);
+      border-bottom: 1px solid rgba(212, 168, 83, 0.06);
     }
 
     .icon-btn {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 12px;
-      border: 1px solid rgba(212, 168, 83, 0.15);
-      background: var(--accent-soft);
+      border: 1px solid rgba(212, 168, 83, 0.1);
+      background: rgba(212, 168, 83, 0.06);
       color: var(--accent);
       cursor: pointer;
       font-size: 1.2rem;
@@ -970,9 +1420,7 @@
       font-family: inherit;
     }
 
-    .icon-btn:hover {
-      background: rgba(212, 168, 83, 0.25);
-    }
+    .icon-btn:hover { background: rgba(212, 168, 83, 0.15); }
 
     .cart-body {
       overflow: auto;
@@ -982,13 +1430,16 @@
     }
 
     .cart-item {
-      border: 1px solid var(--glass-border);
-      border-radius: 16px;
-      padding: 0.85rem;
+      border: 1px solid rgba(212, 168, 83, 0.06);
+      border-radius: 18px;
+      padding: 1rem;
       background: var(--surface);
       display: grid;
       gap: 0.6rem;
+      transition: border-color var(--transition);
     }
+
+    .cart-item:hover { border-color: rgba(212, 168, 83, 0.12); }
 
     .cart-line {
       display: flex;
@@ -997,21 +1448,24 @@
       align-items: start;
     }
 
-    .cart-line h4 { font-size: 0.96rem; margin-bottom: 0.22rem; }
-    .cart-line p, .cart-meta { color: var(--muted); font-size: 0.84rem; }
+    .cart-line h4 { font-size: 0.96rem; margin-bottom: 0.2rem; }
+    .cart-line p, .cart-meta { color: var(--text-3); font-size: 0.84rem; }
 
     .qty-controls {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
+      background: var(--surface-2);
+      border-radius: 12px;
+      padding: 0.2rem;
     }
 
     .qty-controls button {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       border-radius: 10px;
-      border: 1px solid rgba(212, 168, 83, 0.15);
-      background: var(--accent-soft);
+      border: none;
+      background: transparent;
       color: var(--accent);
       cursor: pointer;
       font-size: 1rem;
@@ -1019,13 +1473,11 @@
       transition: background var(--transition);
     }
 
-    .qty-controls button:hover {
-      background: rgba(212, 168, 83, 0.25);
-    }
+    .qty-controls button:hover { background: var(--accent-soft); }
 
     .checkout-box {
-      border-radius: 18px;
-      padding: 1rem;
+      border-radius: 20px;
+      padding: 1.2rem;
       background: var(--surface);
       border: 1px solid var(--glass-border);
       display: grid;
@@ -1037,220 +1489,106 @@
       justify-content: space-between;
       gap: 1rem;
       font-weight: 700;
+      font-size: 1.05rem;
     }
 
-    .checkout-actions { display: grid; gap: 0.7rem; }
+    .checkout-actions { display: grid; gap: 0.6rem; }
 
     .btn-stripe {
       background: linear-gradient(135deg, #635BFF, #7A73FF);
       color: white;
-      box-shadow: 0 4px 16px rgba(99, 91, 255, 0.3);
+      box-shadow: 0 4px 20px rgba(99, 91, 255, 0.25);
     }
 
     .btn-stripe:hover {
       transform: translateY(-1px);
-      box-shadow: 0 6px 24px rgba(99, 91, 255, 0.4);
+      box-shadow: 0 8px 28px rgba(99, 91, 255, 0.4);
     }
 
-    .muted { color: var(--muted); font-size: 0.84rem; }
+    .muted { color: var(--text-3); font-size: 0.82rem; }
     .hidden { display: none !important; }
 
-    /* ─── WhatsApp button ─── */
-    .wa-float {
-      position: fixed;
-      left: 20px;
-      bottom: 20px;
-      z-index: 120;
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: #25D366;
-      color: white;
-      border: none;
-      cursor: pointer;
-      display: grid;
-      place-items: center;
-      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
-      transition: all var(--transition);
-      font-size: 1.5rem;
-    }
-
-    .wa-float:hover {
-      transform: scale(1.1);
-      box-shadow: 0 12px 32px rgba(37, 211, 102, 0.45);
-    }
-
-    .wa-float svg {
-      width: 26px;
-      height: 26px;
-      fill: white;
-    }
-
-    /* ─── Schedule ribbon ─── */
-    .schedule-bar {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 0.6rem;
-      margin-top: 1rem;
-    }
-
-    .schedule-day {
-      padding: 0.6rem;
-      border-radius: 10px;
-      background: var(--surface-2);
-      border: 1px solid rgba(212, 168, 83, 0.06);
-      text-align: center;
-      font-size: 0.8rem;
-    }
-
-    .schedule-day strong {
-      display: block;
-      color: var(--accent);
-      font-size: 0.82rem;
-    }
-
-    .schedule-day span {
-      color: var(--text-secondary);
-    }
-
-    .schedule-day.closed {
-      opacity: 0.5;
-    }
-
-    .schedule-day.closed strong {
-      color: var(--red);
-    }
-
-    /* ─── Photo Gallery ─── */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 0.8rem;
-    }
-
-    .gallery-item {
-      border-radius: var(--radius);
-      overflow: hidden;
-      aspect-ratio: 4/3;
-      cursor: pointer;
-      position: relative;
-      border: 1px solid var(--glass-border);
-      transition: all var(--transition);
-    }
-
-    .gallery-item:hover {
-      border-color: rgba(212, 168, 83, 0.3);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow);
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.05);
-    }
-
-    .gallery-caption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 0.5rem 0.7rem;
-      background: linear-gradient(transparent, rgba(11, 15, 20, 0.85));
-      font-size: 0.78rem;
-      color: var(--text);
-      font-weight: 600;
-    }
-
-    .gallery-lightbox {
-      position: fixed;
-      inset: 0;
-      z-index: 300;
-      background: rgba(0, 0, 0, 0.92);
-      display: grid;
-      place-items: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.2s ease;
-      cursor: pointer;
-    }
-
-    .gallery-lightbox.open {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .gallery-lightbox img {
-      max-width: 90vw;
-      max-height: 85vh;
-      object-fit: contain;
-      border-radius: 8px;
-    }
-
-    .gallery-lightbox .lb-close {
-      position: absolute;
-      top: 20px;
-      right: 24px;
-      color: white;
-      font-size: 2rem;
-      cursor: pointer;
-      background: none;
-      border: none;
-      z-index: 301;
-    }
-
     /* ─── Responsive ─── */
-    @media (max-width: 1080px) {
-      .hero-grid,
-      .catalog-layout,
-      .value-grid,
-      .bundle-grid,
-      .footer-grid { grid-template-columns: 1fr; }
-      .sidebar-stack { position: static; }
+    @media (max-width: 1200px) {
+      .value-grid { grid-template-columns: repeat(3, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+      .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 1; aspect-ratio: 2/1; }
     }
 
-    @media (max-width: 780px) {
+    @media (max-width: 1080px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .catalog-layout { grid-template-columns: 1fr; }
+      .sidebar-stack { position: static; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 860px) {
+      .value-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-item:nth-child(1) { grid-column: span 2; aspect-ratio: 16/9; grid-row: span 1; }
+      .schedule-bar { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    @media (max-width: 640px) {
       .header-inner {
         flex-direction: column;
-        gap: 0.6rem;
+        gap: 0.5rem;
       }
       .header-nav {
-        justify-content: flex-start;
         width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+        flex-wrap: nowrap;
+        gap: 0.15rem;
+        -webkit-overflow-scrolling: touch;
       }
-      .hero-card, .stats-card, .section-card { padding: 1rem; }
-      .hero-points, .mini-grid, .faq-grid { grid-template-columns: 1fr; }
+      .header-nav::-webkit-scrollbar { display: none; }
+      .hero-features { grid-template-columns: 1fr; }
+      .hero-card h1 { font-size: clamp(1.6rem, 6vw, 2.4rem); }
+      .value-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item:nth-child(1) { grid-column: span 2; }
       .product-grid { grid-template-columns: 1fr; }
-      .floating-cart { left: 80px; right: 16px; justify-content: center; }
-      .schedule-bar { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); }
-      .cta-band { flex-direction: column; align-items: stretch; text-align: center; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .schedule-bar { grid-template-columns: repeat(3, 1fr); }
+      .floating-cart { left: 84px; right: 20px; justify-content: center; bottom: 20px; }
+      .wa-float { bottom: 20px; left: 20px; }
+      .cta-band { flex-direction: column; text-align: center; }
+      .footer-grid { grid-template-columns: 1fr; }
     }
+
+    /* ─── Scrollbar ─── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(212, 168, 83, 0.2); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(212, 168, 83, 0.35); }
+
+    /* ─── Selection ─── */
+    ::selection { background: rgba(212, 168, 83, 0.25); color: var(--text); }
   </style>
 </head>
 <body>
-  <div class="topbar">Magazin general Brăila, Str. Spiru Haret — tutun, haine, alimente — deschis Luni–Sâmbătă</div>
+  <canvas id="ambientCanvas"></canvas>
+  <div class="grain-overlay"></div>
 
-  <header class="site-header">
+  <div class="topbar">Magazin general Braila — Str. Spiru Haret — tutun, haine, alimente — deschis Luni–Sambata</div>
+
+  <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <a class="brand" href="#top">
         <div class="brand-badge">1¢</div>
         <div class="brand-copy">
           <strong>1CENT-WISE</strong>
-          <span>RanadeLookSRL — Bun la toate</span>
+          <span>RanadeLookSRL</span>
         </div>
       </a>
-      <nav class="header-nav">
-        <a class="nav-link" href="#galerie">Galerie</a>
-        <a class="nav-link" href="#catalog">Produse</a>
-        <a class="nav-link" href="#pachete">Oferte</a>
-        <a class="nav-link" href="#program">Program</a>
-        <a class="nav-link" href="#intrebari">Info</a>
-        <button class="btn btn-primary" id="headerCartBtn">Coșul meu</button>
+      <nav class="header-nav" id="mainNav">
+        <a class="nav-link" href="#galerie" data-section="galerie">Galerie</a>
+        <a class="nav-link" href="#catalog" data-section="catalog">Produse</a>
+        <a class="nav-link" href="#pachete" data-section="pachete">Oferte</a>
+        <a class="nav-link" href="#program" data-section="program">Program</a>
+        <a class="nav-link" href="#intrebari" data-section="intrebari">Info</a>
+        <button class="btn btn-primary" id="headerCartBtn">Cosul meu</button>
       </nav>
     </div>
   </header>
@@ -1258,31 +1596,43 @@
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
-        <article class="hero-card">
-          <div class="eyebrow">🏪 Magazin general — tot ce ai nevoie, într-un singur loc</div>
-          <h1>Tutun, haine, alimente — la prețuri corecte, fără povești.</h1>
+        <article class="hero-card reveal">
+          <div class="eyebrow">Magazin general — tot ce ai nevoie, intr-un singur loc</div>
+          <h1><span class="text-gradient">Tutun, haine, alimente — la preturi corecte, fara povesti.</span></h1>
           <p>
-            RanadeLookSRL operează 1cent-wise.com — magazinul tău de pe Str. Spiru Haret, Brăila, acum și online. De la țigări și accesorii la haine noi și second-hand, plus alimentele de zi cu zi. Fiecare produs e real, prețul e clar, stocul e cel din magazin.
+            RanadeLookSRL opereaza 1cent-wise.com — magazinul tau de pe Str. Spiru Haret, Braila, acum si online. De la tigari si accesorii la haine noi si second-hand, plus alimentele de zi cu zi. Fiecare produs e real, pretul e clar, stocul e cel din magazin.
           </p>
-          <ul class="hero-points">
-            <li>🚬 Tutun și accesorii de fumat la prețuri standard.</li>
-            <li>👗 Haine noi și second-hand — selecție verificată.</li>
-            <li>🛒 Alimente de bază și produse de uz casnic.</li>
-            <li>📱 Comandă online, ridici din magazin (Brăila) sau livrare locală.</li>
+          <ul class="hero-features">
+            <li>
+              <div class="feat-icon">🚬</div>
+              <span>Tutun si accesorii de fumat la preturi standard.</span>
+            </li>
+            <li>
+              <div class="feat-icon">👗</div>
+              <span>Haine noi si second-hand — selectie verificata.</span>
+            </li>
+            <li>
+              <div class="feat-icon">🛒</div>
+              <span>Alimente de baza si produse de uz casnic.</span>
+            </li>
+            <li>
+              <div class="feat-icon">📱</div>
+              <span>Comanda online, ridici din magazin sau livrare.</span>
+            </li>
           </ul>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#catalog">Vezi produsele</a>
             <a class="btn btn-secondary" href="#program">Program magazin</a>
           </div>
-          <div class="hero-note">Magazin fizic pe Str. Spiru Haret, Brăila. Cumpărăturile online se ridică din magazin sau se livrează local.</div>
+          <div class="hero-note">Magazin fizic pe Str. Spiru Haret, Braila. Cumparaturile online se ridica din magazin sau se livreaza local.</div>
         </article>
 
-        <aside class="stats-card">
+        <aside class="stats-card reveal reveal-delay-2">
           <div class="mini-grid" id="statsGrid"></div>
           <div class="trust-box">
             <h3>De ce 1cent-wise?</h3>
             <p>
-              Fiecare bănuț contează. Aici găsești ce ai nevoie fără să plătești în plus pentru ambalaj sau marketing. Produse reale, prețuri oneste, magazin de încredere.
+              Fiecare banut conteaza. Aici gasesti ce ai nevoie fara sa platesti in plus pentru ambalaj sau marketing. Produse reale, preturi oneste, magazin de incredere.
             </p>
           </div>
         </aside>
@@ -1291,32 +1641,39 @@
 
     <section class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-divider"></div>
+        <div class="section-head reveal">
           <div>
+            <div class="section-label">Departamente</div>
             <h2>Ce oferim</h2>
             <p>Patru departamente, un singur magazin. Tot ce ai nevoie pentru ziua de azi.</p>
           </div>
         </div>
         <div class="value-grid">
-          <article class="value-card">
-            <h3>🚬 Tutun & Accesorii</h3>
-            <p>Țigări (Marlboro, Kent, Fortuna), tutun de rulat, filtre, foițe, brichete. Prețuri standard.</p>
+          <article class="value-card reveal">
+            <div class="value-icon">🚬</div>
+            <h3>Tutun & Accesorii</h3>
+            <p>Tigari (Marlboro, Kent, Fortuna), tutun de rulat, filtre, foite, brichete. Preturi standard.</p>
           </article>
-          <article class="value-card">
-            <h3>👗 Haine Noi & Second-Hand</h3>
-            <p>Rochii, bluze, tricouri pe manechine. Papuci, sandale, lenjerie. Plus secțiune SH cu stendere pline — spălate și verificate.</p>
+          <article class="value-card reveal reveal-delay-1">
+            <div class="value-icon">👗</div>
+            <h3>Haine Noi & SH</h3>
+            <p>Rochii, bluze, tricouri pe manechine. Papuci, sandale, lenjerie. Plus sectiune SH cu stendere — spalate si verificate.</p>
           </article>
-          <article class="value-card">
-            <h3>🍞 Alimente & Băuturi</h3>
-            <p>Pâine, lactate, conserve, dulciuri. Frigidere Pepsi și Bergenbier. Lăzi de înghețată Ice-Mastry și Nestlé. Cafea la automat AMD.</p>
+          <article class="value-card reveal reveal-delay-2">
+            <div class="value-icon">🍞</div>
+            <h3>Alimente & Bauturi</h3>
+            <p>Paine, lactate, conserve, dulciuri. Frigidere Pepsi si Bergenbier. Lazi de inghetata Ice-Mastry si Nestle.</p>
           </article>
-          <article class="value-card">
-            <h3>🏠 Casnice & Electrocasnice</h3>
-            <p>Detergenți, șampoane, hârtie igienică. Veselă, plastic casnic. Fiare de călcat și mici electrocasnice — noi, în cutie.</p>
+          <article class="value-card reveal reveal-delay-3">
+            <div class="value-icon">🏠</div>
+            <h3>Casnice & Electro</h3>
+            <p>Detergenti, sampoane, hartie igienica. Vesela, plastic casnic. Fiare de calcat si electrocasnice noi.</p>
           </article>
-          <article class="value-card">
-            <h3>📦 Ridicare din Magazin sau Livrare</h3>
-            <p>Comanzi online și ridici din magazin în aceeași zi. Sau livrare în Brăila pentru comenzi de peste 50 RON.</p>
+          <article class="value-card reveal reveal-delay-4">
+            <div class="value-icon">📦</div>
+            <h3>Ridicare sau Livrare</h3>
+            <p>Comanzi online si ridici din magazin in aceeasi zi. Sau livrare in Braila pentru comenzi de peste 50 RON.</p>
           </article>
         </div>
       </div>
@@ -1324,19 +1681,21 @@
 
     <section class="section" id="galerie">
       <div class="container">
-        <div class="section-head">
+        <div class="section-divider"></div>
+        <div class="section-head reveal">
           <div>
+            <div class="section-label">Viziteaza-ne</div>
             <h2>Magazinul nostru — poze reale</h2>
-            <p>Nu e render, nu e mockup. Ăsta e magazinul real de pe Str. Spiru Haret.</p>
+            <p>Nu e render, nu e mockup. Asta e magazinul real de pe Str. Spiru Haret.</p>
           </div>
         </div>
-        <div class="gallery-grid">
+        <div class="gallery-grid reveal">
           <div class="gallery-item" onclick="openLightbox(this)">
             <img src="img/proprietate-curte.jpeg" alt="Exteriorul magazinului 1cent-wise" loading="lazy" />
             <div class="gallery-caption">Exteriorul magazinului</div>
           </div>
           <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/interior-alimente-frigidere.jpeg" alt="Zona de alimente — frigidere și rafturi" loading="lazy" />
+            <img src="img/interior-alimente-frigidere.jpeg" alt="Zona de alimente — frigidere si rafturi" loading="lazy" />
             <div class="gallery-caption">Zona alimente & frigidere</div>
           </div>
           <div class="gallery-item" onclick="openLightbox(this)">
@@ -1344,23 +1703,23 @@
             <div class="gallery-caption">Haine noi — manechine</div>
           </div>
           <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/interior-haine-papuci.jpeg" alt="Haine, sandale și lenjerie" loading="lazy" />
+            <img src="img/interior-haine-papuci.jpeg" alt="Haine, sandale si lenjerie" loading="lazy" />
             <div class="gallery-caption">Haine, papuci & lenjerie</div>
           </div>
           <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/interior-sh-stendere.jpeg" alt="Secțiunea second-hand cu stendere" loading="lazy" />
-            <div class="gallery-caption">Secțiunea Second-Hand</div>
+            <img src="img/interior-sh-stendere.jpeg" alt="Sectiunea second-hand cu stendere" loading="lazy" />
+            <div class="gallery-caption">Sectiunea Second-Hand</div>
           </div>
           <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/interior-bauturi-pepsi.jpeg" alt="Frigidere băuturi — Pepsi, Coca-Cola" loading="lazy" />
-            <div class="gallery-caption">Băuturi reci & înghețată</div>
+            <img src="img/interior-bauturi-pepsi.jpeg" alt="Frigidere bauturi — Pepsi, Coca-Cola" loading="lazy" />
+            <div class="gallery-caption">Bauturi reci & inghetata</div>
           </div>
           <div class="gallery-item" onclick="openLightbox(this)">
             <img src="img/interior-overview-intrare.jpeg" alt="Vedere de ansamblu — intrare magazin" loading="lazy" />
-            <div class="gallery-caption">Intrare — Nestlé, Pepsi, Fortuna</div>
+            <div class="gallery-caption">Intrare — Nestle, Pepsi, Fortuna</div>
           </div>
           <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/interior-alimente-overview.jpeg" alt="Haine SH pe stendere și rafturi casnice" loading="lazy" />
+            <img src="img/interior-alimente-overview.jpeg" alt="Haine SH pe stendere si rafturi casnice" loading="lazy" />
             <div class="gallery-caption">Zona haine SH & casnice</div>
           </div>
         </div>
@@ -1369,59 +1728,75 @@
 
     <section class="section" id="pachete">
       <div class="container">
-        <div class="section-head">
+        <div class="section-divider"></div>
+        <div class="section-head reveal">
           <div>
+            <div class="section-label">Economiseste</div>
             <h2>Oferte combinate</h2>
-            <p>Combinații logice care te ajută să economisești. Fără reduceri inventate — doar pachete care au sens.</p>
+            <p>Combinatii logice care te ajuta sa economisesti. Fara reduceri inventate — doar pachete care au sens.</p>
           </div>
         </div>
-        <div class="bundle-grid" id="bundleGrid"></div>
+        <div class="bundle-grid reveal" id="bundleGrid"></div>
       </div>
     </section>
 
     <section class="section" id="catalog">
-      <div class="container catalog-layout">
-        <aside class="sidebar-stack">
-          <div class="section-card">
-            <input class="search-box" id="searchInput" type="text" placeholder="Caută produs, marcă, categorie..." />
-            <div class="filter-list" id="filterList"></div>
+      <div class="container">
+        <div class="section-divider"></div>
+        <div class="section-head reveal">
+          <div>
+            <div class="section-label">Catalog</div>
+            <h2>Toate produsele</h2>
+            <p>38 de produse din 7 categorii. Stoc real, preturi actualizate.</p>
           </div>
-          <div class="sidebar-callout">
-            <h3>Cum comanzi</h3>
-            <ul>
-              <li>Adaugă produsele în coș.</li>
-              <li>Trimite comanda prin WhatsApp sau email.</li>
-              <li>Ridici din magazin sau livrăm noi.</li>
-              <li>Plata se face la ridicare (cash sau card).</li>
-            </ul>
-          </div>
-        </aside>
+        </div>
+        <div class="catalog-layout">
+          <aside class="sidebar-stack reveal">
+            <div class="section-card">
+              <div class="search-wrap">
+                <input class="search-box" id="searchInput" type="text" placeholder="Cauta produs, marca, categorie..." />
+              </div>
+              <div class="filter-list" id="filterList"></div>
+            </div>
+            <div class="sidebar-callout">
+              <h3>Cum comanzi</h3>
+              <ul>
+                <li>Adauga produsele in cos.</li>
+                <li>Trimite comanda prin WhatsApp sau email.</li>
+                <li>Ridici din magazin sau livram noi.</li>
+                <li>Plata se face la ridicare (cash sau card).</li>
+              </ul>
+            </div>
+          </aside>
 
-        <div class="section-card">
-          <div class="toolbar">
-            <div>
-              <p id="resultsInfo">Se încarcă produsele...</p>
+          <div class="section-card reveal reveal-delay-1">
+            <div class="toolbar">
+              <div>
+                <p id="resultsInfo">Se incarca produsele...</p>
+              </div>
+              <div class="chip-row">
+                <span class="chip">Stoc real</span>
+                <span class="chip">Preturi corecte</span>
+                <span class="chip">Ridicare din magazin</span>
+              </div>
             </div>
-            <div class="chip-row">
-              <span class="chip">Stoc real</span>
-              <span class="chip">Prețuri corecte</span>
-              <span class="chip">Ridicare din magazin</span>
-            </div>
+            <div class="product-grid" id="productGrid"></div>
           </div>
-          <div class="product-grid" id="productGrid"></div>
         </div>
       </div>
     </section>
 
     <section class="section" id="program">
       <div class="container">
-        <div class="section-head">
+        <div class="section-divider"></div>
+        <div class="section-head reveal">
           <div>
+            <div class="section-label">Orar</div>
             <h2>Program magazin</h2>
-            <p>Ne găsești pe Str. Spiru Haret, Brăila. Vino direct sau comandă online.</p>
+            <p>Ne gasesti pe Str. Spiru Haret, Braila. Vino direct sau comanda online.</p>
           </div>
         </div>
-        <div class="section-card">
+        <div class="section-card reveal">
           <div class="schedule-bar" id="scheduleBar"></div>
         </div>
       </div>
@@ -1429,45 +1804,47 @@
 
     <section class="section" id="intrebari">
       <div class="container">
-        <div class="section-head">
+        <div class="section-divider"></div>
+        <div class="section-head reveal">
           <div>
-            <h2>Întrebări frecvente</h2>
-            <p>Ce trebuie să știi înainte de a comanda.</p>
+            <div class="section-label">Intrebari</div>
+            <h2>Intrebari frecvente</h2>
+            <p>Ce trebuie sa stii inainte de a comanda.</p>
           </div>
         </div>
         <div class="faq-grid">
-          <article class="faq-item">
+          <article class="faq-item reveal">
             <h3>Pot comanda tutun online?</h3>
-            <p>Da, poți adăuga în coș și ridici din magazin. Livrarea de tutun se face doar local, conform legislației.</p>
+            <p>Da, poti adauga in cos si ridici din magazin. Livrarea de tutun se face doar local, conform legislatiei.</p>
           </article>
-          <article class="faq-item">
-            <h3>Hainele SH sunt curățate?</h3>
-            <p>Da. Toate hainele second-hand sunt spălate și verificate înainte de a fi puse la vânzare. Starea e trecută pe fiecare produs.</p>
+          <article class="faq-item reveal reveal-delay-1">
+            <h3>Hainele SH sunt curatate?</h3>
+            <p>Da. Toate hainele second-hand sunt spalate si verificate inainte de a fi puse la vanzare. Starea e trecuta pe fiecare produs.</p>
           </article>
-          <article class="faq-item">
-            <h3>Cum funcționează livrarea?</h3>
-            <p>Comenzi peste 50 RON — livrare gratuită în Brăila. Sub 50 RON — ridici din magazin sau taxa de livrare e 10 RON.</p>
+          <article class="faq-item reveal reveal-delay-2">
+            <h3>Cum functioneaza livrarea?</h3>
+            <p>Comenzi peste 50 RON — livrare gratuita in Braila. Sub 50 RON — ridici din magazin sau taxa de livrare e 10 RON.</p>
           </article>
-          <article class="faq-item">
+          <article class="faq-item reveal reveal-delay-1">
             <h3>Pot returna un produs?</h3>
-            <p>Hainele noi se pot returna în 14 zile cu etichetă. Alimentele și tutunul nu se returnează. Hainele SH — doar schimb.</p>
+            <p>Hainele noi se pot returna in 14 zile cu eticheta. Alimentele si tutunul nu se returneaza. Hainele SH — doar schimb.</p>
           </article>
-          <article class="faq-item">
-            <h3>Acceptați plata cu cardul?</h3>
-            <p>Da, în magazin acceptăm și cash și card. La livrare, plata se face la primire.</p>
+          <article class="faq-item reveal reveal-delay-2">
+            <h3>Acceptati plata cu cardul?</h3>
+            <p>Da, in magazin acceptam si cash si card. La livrare, plata se face la primire.</p>
           </article>
-          <article class="faq-item">
+          <article class="faq-item reveal reveal-delay-3">
             <h3>Stocul e real sau estimativ?</h3>
-            <p>Real. Ce vezi în catalogul online e ce avem fizic în magazin. Dacă se termină, dispare din listă.</p>
+            <p>Real. Ce vezi in catalogul online e ce avem fizic in magazin. Daca se termina, dispare din lista.</p>
           </article>
         </div>
 
-        <div class="cta-band" id="contact">
+        <div class="cta-band reveal" id="contact">
           <div>
-            <h2>Fiecare bănuț contează.</h2>
-            <p>La 1cent-wise găsești ce ai nevoie la prețuri corecte. Fără vrăjeală, fără prețuri umflate. Vino în magazin sau comandă online.</p>
+            <h2>Fiecare banut conteaza.</h2>
+            <p>La 1cent-wise gasesti ce ai nevoie la preturi corecte. Fara vrajeala, fara preturi umflate. Vino in magazin sau comanda online.</p>
           </div>
-          <button class="btn btn-primary" id="ctaCartBtn">Deschide coșul</button>
+          <button class="btn btn-primary" id="ctaCartBtn">Deschide cosul</button>
         </div>
       </div>
     </section>
@@ -1478,7 +1855,7 @@
       <div class="footer-grid">
         <article class="footer-card">
           <h3>1CENT-WISE</h3>
-          <p>RanadeLookSRL — magazin general pe Str. Spiru Haret, Brăila. Tutun, haine noi și second-hand, alimente și produse de uz casnic.</p>
+          <p>RanadeLookSRL — magazin general pe Str. Spiru Haret, Braila. Tutun, haine noi si second-hand, alimente si produse de uz casnic.</p>
         </article>
         <article class="footer-card">
           <h3>Contact</h3>
@@ -1493,26 +1870,26 @@
           <p>
             RanadeLookSRL<br/>
             CUI: [de completat]<br/>
-            Str. Lalelelor nr. 19, Brăila, România<br/>
-            (Magazin: Str. Spiru Haret, Brăila)
+            Str. Lalelelor nr. 19, Braila, Romania<br/>
+            (Magazin: Str. Spiru Haret, Braila)
           </p>
         </article>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2025–2027 1cent-wise.com — RanadeLookSRL. Toate drepturile rezervate.</span>
-        <span>Prețurile includ TVA. Stocul se actualizează zilnic.</span>
+        <span>Preturile includ TVA. Stocul se actualizeaza zilnic.</span>
       </div>
     </div>
   </footer>
 
-  <button class="floating-cart" id="floatingCartBtn">🛒 Coș <span id="cartCount">0</span></button>
+  <button class="floating-cart" id="floatingCartBtn">🛒 Cos <span class="cart-badge" id="cartCount">0</span></button>
 
   <a class="wa-float" id="waBtn" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
   <div class="gallery-lightbox" id="lightbox" onclick="closeLightbox()">
-    <button class="lb-close" aria-label="Închide">&times;</button>
+    <button class="lb-close" aria-label="Inchide">&times;</button>
     <img id="lightboxImg" src="" alt="" />
   </div>
 
@@ -1520,33 +1897,130 @@
   <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
     <div class="cart-header">
       <div>
-        <h2>Coșul tău</h2>
-        <p class="muted">Adaugă ce ai nevoie și trimite comanda.</p>
+        <h2>Cosul tau</h2>
+        <p class="muted">Adauga ce ai nevoie si trimite comanda.</p>
       </div>
-      <button class="icon-btn" id="closeCartBtn" aria-label="Închide">&times;</button>
+      <button class="icon-btn" id="closeCartBtn" aria-label="Inchide">&times;</button>
     </div>
-
     <div class="cart-body">
       <div id="cartItems"></div>
     </div>
-
     <div class="cart-footer">
       <div class="checkout-box">
         <div class="checkout-line"><span>Total</span><span id="cartTotal">0 RON</span></div>
         <div class="muted">Comanda se trimite pe WhatsApp sau email. Plata la ridicare din magazin.</div>
         <div class="checkout-actions">
-          <button class="btn btn-stripe" id="stripeCheckoutBtn">💳 Plătește cu cardul (Stripe)</button>
+          <button class="btn btn-stripe" id="stripeCheckoutBtn">💳 Plateste cu cardul (Stripe)</button>
           <button class="btn btn-primary" id="checkoutBtn">📱 Trimite pe WhatsApp</button>
           <button class="btn btn-secondary" id="emailCheckoutBtn">📧 Trimite pe email</button>
-          <button class="btn btn-secondary" id="clearCartBtn">Golește coșul</button>
+          <button class="btn btn-secondary" id="clearCartBtn">Goleste cosul</button>
         </div>
-        <div class="muted" style="margin-top:0.4rem; font-size:0.78rem;">💳 Stripe · 📱 WhatsApp · 📧 Email · 🔐 Crypto (în curând)</div>
+        <div class="muted" style="margin-top:0.4rem; font-size:0.75rem;">💳 Stripe · 📱 WhatsApp · 📧 Email · 🔐 Crypto (in curand)</div>
       </div>
     </div>
   </aside>
 
   <script>
-    const CONFIG = {
+    // ─── Ambient Canvas ───
+    (function() {
+      var canvas = document.getElementById('ambientCanvas');
+      var ctx = canvas.getContext('2d');
+      var orbs = [];
+      var W, H;
+
+      function resize() {
+        W = canvas.width = window.innerWidth;
+        H = canvas.height = window.innerHeight;
+      }
+
+      function createOrbs() {
+        orbs = [];
+        var count = Math.min(5, Math.floor(W / 300));
+        for (var i = 0; i < count; i++) {
+          orbs.push({
+            x: Math.random() * W,
+            y: Math.random() * H,
+            r: 150 + Math.random() * 250,
+            vx: (Math.random() - 0.5) * 0.3,
+            vy: (Math.random() - 0.5) * 0.2,
+            hue: i % 2 === 0 ? '212, 168, 83' : '52, 211, 153',
+            alpha: 0.03 + Math.random() * 0.02
+          });
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        for (var i = 0; i < orbs.length; i++) {
+          var o = orbs[i];
+          o.x += o.vx;
+          o.y += o.vy;
+          if (o.x < -o.r) o.x = W + o.r;
+          if (o.x > W + o.r) o.x = -o.r;
+          if (o.y < -o.r) o.y = H + o.r;
+          if (o.y > H + o.r) o.y = -o.r;
+          var grad = ctx.createRadialGradient(o.x, o.y, 0, o.x, o.y, o.r);
+          grad.addColorStop(0, 'rgba(' + o.hue + ', ' + o.alpha + ')');
+          grad.addColorStop(1, 'rgba(' + o.hue + ', 0)');
+          ctx.fillStyle = grad;
+          ctx.beginPath();
+          ctx.arc(o.x, o.y, o.r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        requestAnimationFrame(draw);
+      }
+
+      resize();
+      createOrbs();
+      draw();
+      window.addEventListener('resize', function() { resize(); createOrbs(); });
+    })();
+
+    // ─── Scroll Reveal ───
+    (function() {
+      var reveals = document.querySelectorAll('.reveal');
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+      reveals.forEach(function(el) { observer.observe(el); });
+    })();
+
+    // ─── Header scroll effect ───
+    (function() {
+      var header = document.getElementById('siteHeader');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 60) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }, { passive: true });
+    })();
+
+    // ─── Active nav section ───
+    (function() {
+      var sections = document.querySelectorAll('section[id]');
+      var links = document.querySelectorAll('.nav-link[data-section]');
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var id = entry.target.id;
+            links.forEach(function(link) {
+              link.classList.toggle('active', link.dataset.section === id);
+            });
+          }
+        });
+      }, { threshold: 0.2, rootMargin: '-80px 0px -50% 0px' });
+      sections.forEach(function(s) { observer.observe(s); });
+    })();
+
+    // ─── Store Logic ───
+    var CONFIG = {
       brand: "1CENT-WISE",
       company: "RanadeLookSRL",
       email: "contact@1cent-wise.com",
@@ -1558,85 +2032,79 @@
       stripeLink: "",
       schedule: [
         { day: "Luni", hours: "08:00 – 18:00" },
-        { day: "Marți", hours: "08:00 – 18:00" },
+        { day: "Marti", hours: "08:00 – 18:00" },
         { day: "Miercuri", hours: "08:00 – 18:00" },
         { day: "Joi", hours: "08:00 – 18:00" },
         { day: "Vineri", hours: "08:00 – 18:00" },
-        { day: "Sâmbătă", hours: "09:00 – 15:00" },
-        { day: "Duminică", hours: "Închis", closed: true }
+        { day: "Sambata", hours: "09:00 – 15:00" },
+        { day: "Duminica", hours: "Inchis", closed: true }
       ]
     };
 
-    const products = [
-      // TUTUN & ACCESORII
-      { id: 1, cat: "tutun", name: "Țigări Marlboro Red", desc: "Pachet standard Marlboro Red, 20 bucăți. Brand internațional.", usage: "Vânzare doar 18+.", price: 28, icon: "🚬", condition: "Nou", badge: "badge-new" },
-      { id: 2, cat: "tutun", name: "Țigări Kent Silver", desc: "Pachet Kent Silver, gust mai ușor. 20 bucăți.", usage: "Vânzare doar 18+.", price: 25, icon: "🚬", condition: "Nou", badge: "badge-new" },
-      { id: 3, cat: "tutun", name: "Țigări Fortuna", desc: "Pachet Fortuna, brand popular. 20 bucăți.", usage: "Vânzare doar 18+.", price: 20, icon: "🚬", condition: "Nou", badge: "badge-new" },
-      { id: 4, cat: "tutun", name: "Tutun de rulat 30g", desc: "Tutun de rulat, pungă 30g. Diverse branduri disponibile.", usage: "Necesită foițe și filtre.", price: 42, icon: "🍂", condition: "Nou", badge: "badge-new" },
-      { id: 5, cat: "tutun", name: "Filtre țigări slim (120 buc)", desc: "Filtre slim pentru rulat, 120 bucăți.", usage: "Se introduc în foiță înainte de rulare.", price: 8, icon: "🔘", condition: "Nou", badge: "badge-new" },
-      { id: 6, cat: "tutun", name: "Foițe OCB Slim", desc: "Foițe subțiri OCB pentru rulat, 32 buc/pachet.", usage: "Se folosesc cu tutun de rulat.", price: 5, icon: "📄", condition: "Nou", badge: "badge-new" },
-      { id: 7, cat: "tutun", name: "Brichetă Clipper reîncărcabilă", desc: "Brichetă Clipper clasică, reîncărcabilă cu gaz. Diverse culori.", usage: "Se reîncarcă cu gaz butan standard.", price: 12, icon: "🔥", condition: "Nou", badge: "badge-new" },
+    var products = [
+      { id: 1, cat: "tutun", name: "Tigari Marlboro Red", desc: "Pachet standard Marlboro Red, 20 bucati. Brand international.", usage: "Vanzare doar 18+.", price: 28, icon: "🚬", condition: "Nou", badge: "badge-new" },
+      { id: 2, cat: "tutun", name: "Tigari Kent Silver", desc: "Pachet Kent Silver, gust mai usor. 20 bucati.", usage: "Vanzare doar 18+.", price: 25, icon: "🚬", condition: "Nou", badge: "badge-new" },
+      { id: 3, cat: "tutun", name: "Tigari Fortuna", desc: "Pachet Fortuna, brand popular. 20 bucati.", usage: "Vanzare doar 18+.", price: 20, icon: "🚬", condition: "Nou", badge: "badge-new" },
+      { id: 4, cat: "tutun", name: "Tutun de rulat 30g", desc: "Tutun de rulat, punga 30g. Diverse branduri disponibile.", usage: "Necesita foite si filtre.", price: 42, icon: "🍂", condition: "Nou", badge: "badge-new" },
+      { id: 5, cat: "tutun", name: "Filtre tigari slim (120 buc)", desc: "Filtre slim pentru rulat, 120 bucati.", usage: "Se introduc in foita inainte de rulare.", price: 8, icon: "🔘", condition: "Nou", badge: "badge-new" },
+      { id: 6, cat: "tutun", name: "Foite OCB Slim", desc: "Foite subtiri OCB pentru rulat, 32 buc/pachet.", usage: "Se folosesc cu tutun de rulat.", price: 5, icon: "📄", condition: "Nou", badge: "badge-new" },
+      { id: 7, cat: "tutun", name: "Bricheta Clipper reincarcabila", desc: "Bricheta Clipper clasica, reincarcabila cu gaz. Diverse culori.", usage: "Se reincarca cu gaz butan standard.", price: 12, icon: "🔥", condition: "Nou", badge: "badge-new" },
 
-      // HAINE NOI
-      { id: 10, cat: "haine-noi", name: "Tricou damă — diverse modele", desc: "Tricouri pe manechin, diverse culori și imprimeuri. Mărimi S–XXL.", usage: "Se spală la 40°.", price: 25, icon: "👕", condition: "Nou", badge: "badge-new" },
-      { id: 11, cat: "haine-noi", name: "Bluză damă elegantă", desc: "Bluze noi, materiale ușoare, modele leopard, florale, uni. Mărimi diverse.", usage: "Spălare la 30°, uscare naturală.", price: 35, icon: "👚", condition: "Nou", badge: "badge-new" },
-      { id: 12, cat: "haine-noi", name: "Rochie damă vară", desc: "Rochii de vară, diverse imprimeuri — carouri, floral, geometric. Mărimi S–XXL.", usage: "Material lejer, ideal pentru sezonul cald.", price: 45, icon: "👗", condition: "Nou", badge: "badge-new" },
-      { id: 13, cat: "haine-noi", name: "Lenjerie pat set complet", desc: "Set lenjerie de pat — cearșaf, husă pilotă, fețe pernă. Diverse modele.", usage: "Se spală la 60°. Bumbac.", price: 55, icon: "🛏️", condition: "Nou", badge: "badge-new" },
-      { id: 14, cat: "haine-noi", name: "Papuci/sandale (diverse)", desc: "Papuci de casă, sandale, șlapi — toate mărimile. Modele pentru bărbați, femei, copii.", usage: "Verifică mărimea. Stoc variabil.", price: 15, icon: "🩴", condition: "Nou", badge: "badge-new" },
-      { id: 15, cat: "haine-noi", name: "Șosete & lenjerie intimă", desc: "Șosete, boxeri, lenjerie intimă — seturi diverse. Bumbac.", usage: "Se spală la 40°.", price: 10, icon: "🧦", condition: "Nou", badge: "badge-new" },
+      { id: 10, cat: "haine-noi", name: "Tricou dama — diverse modele", desc: "Tricouri pe manechin, diverse culori si imprimeuri. Marimi S–XXL.", usage: "Se spala la 40°.", price: 25, icon: "👕", condition: "Nou", badge: "badge-new" },
+      { id: 11, cat: "haine-noi", name: "Bluza dama eleganta", desc: "Bluze noi, materiale usoare, modele leopard, florale, uni. Marimi diverse.", usage: "Spalare la 30°, uscare naturala.", price: 35, icon: "👚", condition: "Nou", badge: "badge-new" },
+      { id: 12, cat: "haine-noi", name: "Rochie dama vara", desc: "Rochii de vara, diverse imprimeuri — carouri, floral, geometric. Marimi S–XXL.", usage: "Material lejer, ideal pentru sezonul cald.", price: 45, icon: "👗", condition: "Nou", badge: "badge-new" },
+      { id: 13, cat: "haine-noi", name: "Lenjerie pat set complet", desc: "Set lenjerie de pat — cearsaf, husa pilota, fete perna. Diverse modele.", usage: "Se spala la 60°. Bumbac.", price: 55, icon: "🛏️", condition: "Nou", badge: "badge-new" },
+      { id: 14, cat: "haine-noi", name: "Papuci/sandale (diverse)", desc: "Papuci de casa, sandale, slapi — toate marimile. Modele pentru barbati, femei, copii.", usage: "Verifica marimea. Stoc variabil.", price: 15, icon: "🩴", condition: "Nou", badge: "badge-new" },
+      { id: 15, cat: "haine-noi", name: "Sosete & lenjerie intima", desc: "Sosete, boxeri, lenjerie intima — seturi diverse. Bumbac.", usage: "Se spala la 40°.", price: 10, icon: "🧦", condition: "Nou", badge: "badge-new" },
 
-      // HAINE SECOND-HAND
-      { id: 20, cat: "haine-sh", name: "Bluză damă SH – selecție", desc: "Bluze second-hand sortate și spălate. Stare bună. Branduri diverse pe stender.", usage: "Verifică mărimea din etichetă.", price: 15, icon: "👚", condition: "Second-hand — stare bună" },
-      { id: 21, cat: "haine-sh", name: "Pantaloni/Jeanși SH", desc: "Pantaloni și jeanși second-hand, diverse mărimi și stiluri. Pe stender.", usage: "Proba recomandată.", price: 20, icon: "👖", condition: "Second-hand — verificat" },
-      { id: 22, cat: "haine-sh", name: "Rochie damă SH", desc: "Rochii second-hand, diverse modele sezoniere. Sortate pe stender.", usage: "Verifică talia și lungimea.", price: 20, icon: "👗", condition: "Second-hand — stare bună" },
-      { id: 23, cat: "haine-sh", name: "Geacă/Jachetă SH", desc: "Geci și jachete second-hand, verificate. Diverse modele.", usage: "Verifică fermoarul și buzunarele.", price: 35, icon: "🧥", condition: "Second-hand — verificat" },
-      { id: 24, cat: "haine-sh", name: "Cămașă bărbați SH", desc: "Cămăși second-hand, bumbac sau blend, diverse culori.", usage: "Verifică nasturii și gulerul.", price: 18, icon: "👔", condition: "Second-hand — verificat" },
-      { id: 25, cat: "haine-sh", name: "Lot haine copii SH (5 piese)", desc: "5 piese haine copii second-hand, sortate pe vârstă. Spălate.", usage: "Alege intervalul de vârstă la comandă.", price: 30, icon: "🧒", condition: "Second-hand — lot" },
+      { id: 20, cat: "haine-sh", name: "Bluza dama SH – selectie", desc: "Bluze second-hand sortate si spalate. Stare buna. Branduri diverse pe stender.", usage: "Verifica marimea din eticheta.", price: 15, icon: "👚", condition: "Second-hand — stare buna" },
+      { id: 21, cat: "haine-sh", name: "Pantaloni/Jeansi SH", desc: "Pantaloni si jeansi second-hand, diverse marimi si stiluri. Pe stender.", usage: "Proba recomandata.", price: 20, icon: "👖", condition: "Second-hand — verificat" },
+      { id: 22, cat: "haine-sh", name: "Rochie dama SH", desc: "Rochii second-hand, diverse modele sezoniere. Sortate pe stender.", usage: "Verifica talia si lungimea.", price: 20, icon: "👗", condition: "Second-hand — stare buna" },
+      { id: 23, cat: "haine-sh", name: "Geaca/Jacheta SH", desc: "Geci si jachete second-hand, verificate. Diverse modele.", usage: "Verifica fermoarul si buzunarele.", price: 35, icon: "🧥", condition: "Second-hand — verificat" },
+      { id: 24, cat: "haine-sh", name: "Camasa barbati SH", desc: "Camasi second-hand, bumbac sau blend, diverse culori.", usage: "Verifica nasturii si gulerul.", price: 18, icon: "👔", condition: "Second-hand — verificat" },
+      { id: 25, cat: "haine-sh", name: "Lot haine copii SH (5 piese)", desc: "5 piese haine copii second-hand, sortate pe varsta. Spalate.", usage: "Alege intervalul de varsta la comanda.", price: 30, icon: "🧒", condition: "Second-hand — lot" },
 
-      // ALIMENTE & BĂUTURI
-      { id: 30, cat: "alimente", name: "Pâine albă feliată 500g", desc: "Pâine albă feliată, proaspătă zilnic.", usage: "Se consumă în 3 zile.", price: 5, icon: "🍞", condition: "Proaspăt" },
-      { id: 31, cat: "alimente", name: "Lapte UHT 1L (3.5%)", desc: "Lapte UHT integral, 1 litru.", usage: "După deschidere, se consumă în 3 zile.", price: 8, icon: "🥛", condition: "Nou" },
-      { id: 32, cat: "alimente", name: "Ulei de floarea soarelui 1L", desc: "Ulei rafinat, 1 litru. Ideal pentru gătit.", usage: "Se păstrează la loc răcoros.", price: 12, icon: "🫒", condition: "Nou" },
-      { id: 33, cat: "alimente", name: "Zahăr alb 1kg", desc: "Zahăr alb cristal, 1 kilogram.", usage: "Se păstrează în loc uscat.", price: 6, icon: "🧂", condition: "Nou" },
-      { id: 34, cat: "alimente", name: "Cafea măcinată 250g", desc: "Cafea măcinată, diverse branduri.", usage: "La ibric, filtru sau espressor.", price: 18, icon: "☕", condition: "Nou" },
-      { id: 35, cat: "alimente", name: "Ciocolată / dulciuri", desc: "Ciocolată, napolitane, biscuiți — diverse sortimente pe raft.", usage: "Se păstrează sub 25°C.", price: 7, icon: "🍫", condition: "Nou" },
-      { id: 36, cat: "alimente", name: "Conserve diverse", desc: "Conserve de pește, legume, pate — stoc variabil.", usage: "Verifică data de expirare.", price: 8, icon: "🥫", condition: "Nou" },
+      { id: 30, cat: "alimente", name: "Paine alba feliata 500g", desc: "Paine alba feliata, proaspata zilnic.", usage: "Se consuma in 3 zile.", price: 5, icon: "🍞", condition: "Proaspat" },
+      { id: 31, cat: "alimente", name: "Lapte UHT 1L (3.5%)", desc: "Lapte UHT integral, 1 litru.", usage: "Dupa deschidere, se consuma in 3 zile.", price: 8, icon: "🥛", condition: "Nou" },
+      { id: 32, cat: "alimente", name: "Ulei de floarea soarelui 1L", desc: "Ulei rafinat, 1 litru. Ideal pentru gatit.", usage: "Se pastreaza la loc racoros.", price: 12, icon: "🫒", condition: "Nou" },
+      { id: 33, cat: "alimente", name: "Zahar alb 1kg", desc: "Zahar alb cristal, 1 kilogram.", usage: "Se pastreaza in loc uscat.", price: 6, icon: "🧂", condition: "Nou" },
+      { id: 34, cat: "alimente", name: "Cafea macinata 250g", desc: "Cafea macinata, diverse branduri.", usage: "La ibric, filtru sau espressor.", price: 18, icon: "☕", condition: "Nou" },
+      { id: 35, cat: "alimente", name: "Ciocolata / dulciuri", desc: "Ciocolata, napolitane, biscuiti — diverse sortimente pe raft.", usage: "Se pastreaza sub 25°C.", price: 7, icon: "🍫", condition: "Nou" },
+      { id: 36, cat: "alimente", name: "Conserve diverse", desc: "Conserve de peste, legume, pate — stoc variabil.", usage: "Verifica data de expirare.", price: 8, icon: "🥫", condition: "Nou" },
 
-      // BĂUTURI RECI & ÎNGHEȚATĂ
-      { id: 40, cat: "bauturi", name: "Pepsi / Coca-Cola 0.5L", desc: "Băuturi răcoritoare la sticlă PET, din frigider. Diverse sortimente.", usage: "Se servește rece. Frigider Pepsi în magazin.", price: 5, icon: "🥤", condition: "Rece" },
-      { id: 41, cat: "bauturi", name: "Bere Bergenbier 0.5L", desc: "Bere la doză sau sticlă, din frigider. Bergenbier și alte mărci.", usage: "Vânzare doar 18+. Se servește rece.", price: 6, icon: "🍺", condition: "Rece" },
-      { id: 42, cat: "bauturi", name: "Apă minerală 2L", desc: "Apă minerală naturală, PET 2L.", usage: "Se păstrează la loc răcoros.", price: 4, icon: "💧", condition: "Nou" },
-      { id: 43, cat: "bauturi", name: "Înghețată Ice-Mastry (diverse)", desc: "Înghețată la bucată sau cornet din lada frigorifică. Sortimente variate.", usage: "Se consumă imediat.", price: 5, icon: "🍦", condition: "Congelat" },
-      { id: 44, cat: "bauturi", name: "Înghețată Nestlé (diverse)", desc: "Înghețată premium Nestlé din ladă. Cornet, baton, pahar.", usage: "Se consumă imediat.", price: 8, icon: "🍦", condition: "Congelat" },
-      { id: 45, cat: "bauturi", name: "Cafea la automat (AMD Vending)", desc: "Cafea proaspătă la automat — espresso, cappuccino, ciocolată caldă.", usage: "Automat AMD Coffee & Vending în magazin.", price: 3, icon: "☕", condition: "Proaspăt", badge: "badge-promo" },
+      { id: 40, cat: "bauturi", name: "Pepsi / Coca-Cola 0.5L", desc: "Bauturi racoritoare la sticla PET, din frigider. Diverse sortimente.", usage: "Se serveste rece. Frigider Pepsi in magazin.", price: 5, icon: "🥤", condition: "Rece" },
+      { id: 41, cat: "bauturi", name: "Bere Bergenbier 0.5L", desc: "Bere la doza sau sticla, din frigider. Bergenbier si alte marci.", usage: "Vanzare doar 18+. Se serveste rece.", price: 6, icon: "🍺", condition: "Rece" },
+      { id: 42, cat: "bauturi", name: "Apa minerala 2L", desc: "Apa minerala naturala, PET 2L.", usage: "Se pastreaza la loc racoros.", price: 4, icon: "💧", condition: "Nou" },
+      { id: 43, cat: "bauturi", name: "Inghetata Ice-Mastry (diverse)", desc: "Inghetata la bucata sau cornet din lada frigorifica. Sortimente variate.", usage: "Se consuma imediat.", price: 5, icon: "🍦", condition: "Congelat" },
+      { id: 44, cat: "bauturi", name: "Inghetata Nestle (diverse)", desc: "Inghetata premium Nestle din lada. Cornet, baton, pahar.", usage: "Se consuma imediat.", price: 8, icon: "🍦", condition: "Congelat" },
+      { id: 45, cat: "bauturi", name: "Cafea la automat (AMD Vending)", desc: "Cafea proaspata la automat — espresso, cappuccino, ciocolata calda.", usage: "Automat AMD Coffee & Vending in magazin.", price: 3, icon: "☕", condition: "Proaspat", badge: "badge-promo" },
 
-      // CASNICE & DIVERSE
-      { id: 50, cat: "casnice", name: "Detergent lichid / pudră", desc: "Detergent pentru rufe, diverse mărci. Lichid sau pudră.", usage: "Dozaj conform instrucțiunilor.", price: 18, icon: "🧴", condition: "Nou" },
-      { id: 51, cat: "casnice", name: "Șampon / Gel de duș", desc: "Produse de igienă personală — șampon, gel de duș, săpun.", usage: "Diverse mărci disponibile.", price: 12, icon: "🧴", condition: "Nou" },
-      { id: 52, cat: "casnice", name: "Hârtie igienică (8 role)", desc: "Hârtie igienică, pachet 8 role, 3 straturi.", usage: "Produs de bază.", price: 16, icon: "🧻", condition: "Nou" },
-      { id: 53, cat: "casnice", name: "Veselă — farfurii, căni", desc: "Farfurii, căni, boluri — pe raft în secțiunea casnice.", usage: "Diverse modele și mărimi.", price: 10, icon: "🍽️", condition: "Nou" },
-      { id: 54, cat: "casnice", name: "Fier de călcat (Olive/diverse)", desc: "Fier de călcat nou, diverse branduri. Cutie originală.", usage: "Verifică voltajul și specificațiile.", price: 65, icon: "🔌", condition: "Nou", badge: "badge-new" },
-      { id: 55, cat: "casnice", name: "Articole plastic casnice", desc: "Lighene, găleți, cutii depozitare — diverse culori și mărimi.", usage: "Uz casnic.", price: 12, icon: "🪣", condition: "Nou" }
+      { id: 50, cat: "casnice", name: "Detergent lichid / pudra", desc: "Detergent pentru rufe, diverse marci. Lichid sau pudra.", usage: "Dozaj conform instructiunilor.", price: 18, icon: "🧴", condition: "Nou" },
+      { id: 51, cat: "casnice", name: "Sampon / Gel de dus", desc: "Produse de igiena personala — sampon, gel de dus, sapun.", usage: "Diverse marci disponibile.", price: 12, icon: "🧴", condition: "Nou" },
+      { id: 52, cat: "casnice", name: "Hartie igienica (8 role)", desc: "Hartie igienica, pachet 8 role, 3 straturi.", usage: "Produs de baza.", price: 16, icon: "🧻", condition: "Nou" },
+      { id: 53, cat: "casnice", name: "Vesela — farfurii, cani", desc: "Farfurii, cani, boluri — pe raft in sectiunea casnice.", usage: "Diverse modele si marimi.", price: 10, icon: "🍽️", condition: "Nou" },
+      { id: 54, cat: "casnice", name: "Fier de calcat (Olive/diverse)", desc: "Fier de calcat nou, diverse branduri. Cutie originala.", usage: "Verifica voltajul si specificatiile.", price: 65, icon: "🔌", condition: "Nou", badge: "badge-new" },
+      { id: 55, cat: "casnice", name: "Articole plastic casnice", desc: "Lighene, galeti, cutii depozitare — diverse culori si marimi.", usage: "Uz casnic.", price: 12, icon: "🪣", condition: "Nou" }
     ];
 
-    const categories = [
+    var categories = [
       { id: "all", label: "Toate produsele", icon: "🏪" },
       { id: "tutun", label: "Tutun & Accesorii", icon: "🚬" },
       { id: "haine-noi", label: "Haine Noi", icon: "👕" },
       { id: "haine-sh", label: "Haine Second-Hand", icon: "👗" },
       { id: "alimente", label: "Alimente", icon: "🍞" },
-      { id: "bauturi", label: "Băuturi & Înghețată", icon: "🥤" },
+      { id: "bauturi", label: "Bauturi & Inghetata", icon: "🥤" },
       { id: "casnice", label: "Casnice & Diverse", icon: "🏠" }
     ];
 
-    const bundles = [
-      { title: "Kit de rulat complet", ids: [4, 5, 6, 7], reason: "Tutun + filtre + foițe + brichetă. Tot ce trebuie, într-un singur pas.", cta: "Adaugă kitul" },
-      { title: "Pachet haine SH familie", ids: [20, 21, 25], reason: "Bluze, pantaloni și haine copii SH. Economie reală pentru toată familia.", cta: "Adaugă pachetul" },
-      { title: "Coș alimente de bază", ids: [30, 31, 32, 33, 34], reason: "Pâine, lapte, ulei, zahăr, cafea — cele 5 de bază.", cta: "Adaugă coșul" },
-      { title: "Răcoritoare de vară", ids: [40, 43, 45], reason: "Pepsi rece + înghețată + cafea la automat. Combo perfect pe caniculă.", cta: "Adaugă combo" }
+    var bundles = [
+      { title: "Kit de rulat complet", ids: [4, 5, 6, 7], reason: "Tutun + filtre + foite + bricheta. Tot ce trebuie, intr-un singur pas.", cta: "Adauga kitul" },
+      { title: "Pachet haine SH familie", ids: [20, 21, 25], reason: "Bluze, pantaloni si haine copii SH. Economie reala pentru toata familia.", cta: "Adauga pachetul" },
+      { title: "Cos alimente de baza", ids: [30, 31, 32, 33, 34], reason: "Paine, lapte, ulei, zahar, cafea — cele 5 de baza.", cta: "Adauga cosul" },
+      { title: "Racoritoare de vara", ids: [40, 43, 45], reason: "Pepsi rece + inghetata + cafea la automat. Combo perfect pe canicula.", cta: "Adauga combo" }
     ];
 
-    const els = {
+    var els = {
       statsGrid: document.getElementById("statsGrid"),
       bundleGrid: document.getElementById("bundleGrid"),
       filterList: document.getElementById("filterList"),
@@ -1662,55 +2130,52 @@
       waBtn: document.getElementById("waBtn")
     };
 
-    let state = {
+    var state = {
       category: "all",
       search: "",
       cart: JSON.parse(localStorage.getItem("1cw-cart") || "[]")
     };
 
-    function saveCart() {
-      localStorage.setItem("1cw-cart", JSON.stringify(state.cart));
-    }
-
+    function saveCart() { localStorage.setItem("1cw-cart", JSON.stringify(state.cart)); }
     function money(v) { return v + " " + CONFIG.currency; }
-    function byId(id) { return products.find(p => p.id === id); }
-
+    function byId(id) { return products.find(function(p) { return p.id === id; }); }
     function categoryCount(catId) {
-      return catId === "all" ? products.length : products.filter(p => p.cat === catId).length;
+      return catId === "all" ? products.length : products.filter(function(p) { return p.cat === catId; }).length;
     }
 
     function renderStats() {
-      const prices = products.map(p => p.price);
-      const stats = [
-        { value: products.length, label: "produse disponibile" },
+      var prices = products.map(function(p) { return p.price; });
+      var stats = [
+        { value: products.length, label: "produse" },
         { value: categories.length - 1, label: "categorii" },
-        { value: Math.min(...prices) + "–" + Math.max(...prices) + " RON", label: "interval preț" },
-        { value: "Luni–Sâm", label: "program deschis" }
+        { value: Math.min.apply(null, prices) + "–" + Math.max.apply(null, prices) + " RON", label: "interval pret" },
+        { value: "L–S", label: "deschis" }
       ];
-      els.statsGrid.innerHTML = stats.map(s =>
-        '<div class="mini-stat"><strong>' + s.value + '</strong><span>' + s.label + '</span></div>'
-      ).join("");
+      els.statsGrid.innerHTML = stats.map(function(s) {
+        return '<div class="mini-stat"><strong>' + s.value + '</strong><span>' + s.label + '</span></div>';
+      }).join("");
     }
 
     function renderSchedule() {
-      const today = new Date().getDay();
-      const dayMap = [6, 0, 1, 2, 3, 4, 5];
-      els.scheduleBar.innerHTML = CONFIG.schedule.map((s, i) => {
-        const isToday = dayMap[today] === i;
-        return '<div class="schedule-day' + (s.closed ? ' closed' : '') + '"' +
-          (isToday ? ' style="border-color:var(--accent);border-width:2px;"' : '') +
-          '><strong>' + s.day + (isToday ? ' ★' : '') + '</strong><span>' + s.hours + '</span></div>';
+      var today = new Date().getDay();
+      var dayMap = [6, 0, 1, 2, 3, 4, 5];
+      els.scheduleBar.innerHTML = CONFIG.schedule.map(function(s, i) {
+        var isToday = dayMap[today] === i;
+        var cls = 'schedule-day';
+        if (s.closed) cls += ' closed';
+        if (isToday) cls += ' today';
+        return '<div class="' + cls + '"><strong>' + s.day + (isToday ? ' ★' : '') + '</strong><span>' + s.hours + '</span></div>';
       }).join("");
     }
 
     function renderFilters() {
-      els.filterList.innerHTML = categories.map(cat =>
-        '<button class="filter-btn' + (state.category === cat.id ? ' active' : '') +
-        '" data-cat="' + cat.id + '"><span>' + cat.icon + ' ' + cat.label +
-        '</span><small>' + categoryCount(cat.id) + '</small></button>'
-      ).join("");
+      els.filterList.innerHTML = categories.map(function(cat) {
+        return '<button class="filter-btn' + (state.category === cat.id ? ' active' : '') +
+          '" data-cat="' + cat.id + '"><span>' + cat.icon + ' ' + cat.label +
+          '</span><small>' + categoryCount(cat.id) + '</small></button>';
+      }).join("");
 
-      els.filterList.querySelectorAll(".filter-btn").forEach(btn => {
+      els.filterList.querySelectorAll(".filter-btn").forEach(function(btn) {
         btn.addEventListener("click", function() {
           state.category = this.dataset.cat;
           renderFilters();
@@ -1734,7 +2199,7 @@
       els.resultsInfo.textContent = filtered.length + " produse · " + catLabel;
 
       if (!filtered.length) {
-        els.productGrid.innerHTML = '<div class="empty-state">Niciun produs pe filtrul ăsta. Încearcă altă categorie sau alt termen.</div>';
+        els.productGrid.innerHTML = '<div class="empty-state">Niciun produs pe filtrul asta. Incearca alta categorie sau alt termen.</div>';
         return;
       }
 
@@ -1748,7 +2213,7 @@
           '<div class="usage-box">' + p.usage + '</div>' +
           '<div class="product-footer">' +
           '<div class="price">' + p.price + '<small>RON</small></div>' +
-          '<button class="ghost" data-add="' + p.id + '">Adaugă</button>' +
+          '<button class="ghost" data-add="' + p.id + '">Adauga</button>' +
           '</div></div></article>';
       }).join("");
 
@@ -1765,7 +2230,7 @@
 
         return '<article class="bundle-card"><h3>' + b.title + '</h3>' +
           '<p>' + b.reason + '</p>' +
-          '<div class="usage-box" style="margin-top:0.9rem;">' + names + '</div>' +
+          '<div class="bundle-contents">' + names + '</div>' +
           '<div class="bundle-line"><span>Total pachet</span><strong>' + money(total) + '</strong></div>' +
           '<div class="bundle-line"><span></span>' +
           '<button class="ghost" data-bundle="' + b.ids.join(",") + '">' + b.cta + '</button></div>' +
@@ -1801,11 +2266,7 @@
       renderCart();
     }
 
-    function clearCart() {
-      state.cart = [];
-      saveCart();
-      renderCart();
-    }
+    function clearCart() { state.cart = []; saveCart(); renderCart(); }
 
     function renderCart() {
       var enriched = state.cart.map(function(c) {
@@ -1819,14 +2280,14 @@
       els.cartTotal.textContent = money(total);
 
       if (!enriched.length) {
-        els.cartItems.innerHTML = '<div class="empty-state">Coșul e gol. Alege produsele din catalog.</div>';
+        els.cartItems.innerHTML = '<div class="empty-state">Cosul e gol. Alege produsele din catalog.</div>';
         return;
       }
 
       els.cartItems.innerHTML = enriched.map(function(item) {
         return '<div class="cart-item"><div class="cart-line"><div>' +
           '<h4>' + item.name + '</h4><p>' + item.price + ' RON / buc</p></div>' +
-          '<button class="icon-btn" data-remove="' + item.id + '" aria-label="Șterge">&times;</button></div>' +
+          '<button class="icon-btn" data-remove="' + item.id + '" aria-label="Sterge">&times;</button></div>' +
           '<div class="cart-line"><div class="qty-controls">' +
           '<button data-qty="-1" data-id="' + item.id + '">−</button>' +
           '<strong>' + item.qty + '</strong>' +
@@ -1869,26 +2330,23 @@
         return "• " + i.name + " × " + i.qty + " = " + (i.price * i.qty) + " RON";
       });
 
-      return "Salut! Vreau să comand de pe 1cent-wise.com:\n\n" +
+      return "Salut! Vreau sa comand de pe 1cent-wise.com:\n\n" +
         lines.join("\n") +
         "\n\nTotal: " + total + " RON" +
-        (total >= CONFIG.freeDelivery ? "\n(Livrare gratuită)" : "\n(+ " + CONFIG.deliveryFee + " RON livrare sau ridicare din magazin)") +
-        "\n\nNume:\nTelefon:\nAdresă livrare / ridic din magazin:";
+        (total >= CONFIG.freeDelivery ? "\n(Livrare gratuita)" : "\n(+ " + CONFIG.deliveryFee + " RON livrare sau ridicare din magazin)") +
+        "\n\nNume:\nTelefon:\nAdresa livrare / ridic din magazin:";
     }
 
     function checkoutWhatsApp() {
       var text = buildOrderText();
-      if (!text) { alert("Coșul e gol."); return; }
-      var url = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(text);
-      window.open(url, "_blank");
+      if (!text) { alert("Cosul e gol."); return; }
+      window.open("https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(text), "_blank");
     }
 
     function checkoutEmail() {
       var text = buildOrderText();
-      if (!text) { alert("Coșul e gol."); return; }
-      var subject = encodeURIComponent("Comandă " + CONFIG.brand);
-      var body = encodeURIComponent(text);
-      window.location.href = "mailto:" + CONFIG.email + "?subject=" + subject + "&body=" + body;
+      if (!text) { alert("Cosul e gol."); return; }
+      window.location.href = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent("Comanda " + CONFIG.brand) + "&body=" + encodeURIComponent(text);
     }
 
     function checkoutStripe() {
@@ -1896,22 +2354,13 @@
         var p = byId(c.id);
         return p ? Object.assign({}, p, { qty: c.qty }) : null;
       }).filter(Boolean);
-
-      if (!enriched.length) { alert("Coșul e gol."); return; }
-
+      if (!enriched.length) { alert("Cosul e gol."); return; }
       var total = enriched.reduce(function(s, i) { return s + i.price * i.qty; }, 0);
-
-      // Stripe Payment Links — replace YOUR_STRIPE_PAYMENT_LINK with actual Stripe link
-      // For now, show configuration instructions
       if (CONFIG.stripeLink) {
         var desc = enriched.map(function(i) { return i.name + " x" + i.qty; }).join(", ");
-        window.open(CONFIG.stripeLink + "?prefilled_email=&client_reference_id=" +
-          encodeURIComponent(desc.substring(0, 200)), "_blank");
+        window.open(CONFIG.stripeLink + "?prefilled_email=&client_reference_id=" + encodeURIComponent(desc.substring(0, 200)), "_blank");
       } else {
-        var msg = "Plata cu cardul prin Stripe va fi activată în curând.\n\n" +
-          "Total comandă: " + total + " RON\n\n" +
-          "Între timp, poți comanda prin WhatsApp sau email.";
-        alert(msg);
+        alert("Plata cu cardul prin Stripe va fi activata in curand.\n\nTotal comanda: " + total + " RON\n\nIntre timp, poti comanda prin WhatsApp sau email.");
       }
     }
 
@@ -1949,7 +2398,7 @@
     }
 
     document.addEventListener("keydown", function(e) {
-      if (e.key === "Escape") closeLightbox();
+      if (e.key === "Escape") { closeLightbox(); closeCart(); }
     });
 
     hydrateContact();
