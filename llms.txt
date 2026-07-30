@@ -1,11 +1,35 @@
-# 1cent-wise.com — RanadeLookSRL
+# 1cent-wise.com — Hub Logistic AI | RanadeLookSRL
 
-> Magazin general în Brăila, România. Str. Spiru Haret.
+> Hub logistic AI în Brăila, România. Str. Spiru Haret.
+> Nodul fizic al ecosistemului ami*. Bootstrapped din 2023.
 > Sediu facturare: Str. Lalelelor nr. 19, Brăila.
 
 ## Ce este 1cent-wise?
 
-1cent-wise.com este magazinul online al firmei RanadeLookSRL din Brăila, România. Este un magazin general cu peste 3000 de produse din 21 categorii:
+1cent-wise.com este hub-ul logistic AI al firmei RanadeLookSRL din Brăila, România — nodul fizic al ecosistemului ami*. Magazin general cu peste 3000 de produse din 21 categorii, conectat la o rețea AI construită integral de la zero, fără finanțare externă:
+
+## Ecosistemul ami*
+
+- **AmiQiAI** (LIVE): AI Quality Intelligence — amiqiai.com
+- **BRIDGRAI** (ACTIV): Platformă A2A cu 8 agenți AI (UKBE, CASP, HASN, Sens, ACR, Concordance, Calibration, Heritage). 18 teste verificate. Tezos blockchain.
+- **AmiDor** (ACTIV): 5 aplicații pe un motor — companion, arbitraj, micro-grid, ScaleEngine O(N), pacer copii
+- **AmiPecetAI** (ACTIV): Notar digital de sens și intenție. PostgreSQL 16+, audit GDPR.
+- **AmiBellAI** (DEV): În dezvoltare — amibellai.com
+- **agikindergarten** (SCOP): Educație AI pentru copii — finanțat organic din ami* SaaS
+- **UKBE Core** (IP): Motor proprietar AGPL-3.0/commercial, adaptabil multi-industrie
+- **1cent-wise** (HUB): Nodul fizic — 3000+ produse, magazin real, dovada de valoare tangibilă
+
+## Dovezi verificabile
+
+- 3.5 ani de muncă bootstrapped (din 2023)
+- 106 IP-uri înregistrate pe blockchain Tezos
+- 3000+ produse în stoc real fizic
+- 8 agenți AI activi în BRIDGRAI
+- Zero finanțare externă, zero investitori
+- Pozele de pe site sunt din magazin (nu stock photos)
+- Cod open-source sub AGPL-3.0
+
+## Produse (21 categorii)
 
 - **Tutun & Accesorii** (~200): țigări (25+ branduri), tutun de rulat, filtre, foițe, brichete, trabucuri
 - **Haine Damă** (~440): tricouri, bluze, rochii, pantaloni, jachete — toate mărimile, 10 culori
@@ -55,9 +79,19 @@
 
 - **Firmă**: RanadeLookSRL
 - **Domeniu**: 1cent-wise.com
+- **Tip**: Hub Logistic AI — nod fizic al ecosistemului ami*
 - **Țară**: România
 - **Oraș**: Brăila
 - **Motto**: "Fiecare bănuț contează"
+- **Status**: Bootstrapped din 2023, zero finanțare externă
+- **Conformitate**: EU GDPR, E-Commerce Directive, zero cookies non-esențiale
+
+## Ecosistem ami* — Link-uri
+
+- AmiQiAI: https://amiqiai.com
+- AmiBellAI: https://amibellai.com
+- agikindergarten: https://agikindergarten.com
+- 1cent-wise (hub): https://1cent-wise.com
 
 ## Contact
 
